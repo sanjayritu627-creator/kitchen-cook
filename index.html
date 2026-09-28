@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bhandar — Kitchen Register</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#3F6B4A">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Bhandar Cook">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAO40lEQVR42u2daYxd5XnHf+97zrn33GU2e4xNAWMMlstWcClLUYCopIVCN9KQtpEiVRSRVEiNBFKz9EP5UEpU1a3aRApR0kY0aWgQCmkSoCwKmCWsxYDBULCNMdh4Hc/M3e8953374c5McMBgw9g+5/L/SWNbI3+487y/ed7n3c1F117mEWJAsAqBkNBCSGghJLQQElpIaCEktBASWggJLYSEFhJaCAkthIQWQkILIaGFhBZCQgshoYWQ0EJIaCGhhZDQQkhoISS0EBJaSGghJLQQEloICS2EhBYSWggJLYSEFkJCCyGhhYQWQkILIaGFkNBCQgshoYWQ0EJIaCEktJDQQuSfUCE4hNnCGIyxeO8BjzEGDzjnFBwJnTOZraXVadPpdYnCCAP00oTABlTiEsCM6EJCZxhjDADTzTqnLD2Rj59xLiuPXUYYhry+Yxs/f3Etj7/0LFEYEQUhzitbz2v8L7r2MqWJeZTZOUen1+Wvrvgsn7zgd4jjMqTJTNoO8GnCoy+u5cb//AZTzTpxVJTUGhRml16a8MU/uZrPXPLHeOeo16ZotJo02k3qjWka7SYfO/Nc/uGav2a4XCVJk7msLiR0ZghsQK3Z4PJzLuKK3/o9alN78N4TBAHWWqyxBDYgsAHTUxOcvvI0rv2Dz9DstLESWkJnjdSlVOISn7rwEpJWE2vsfjNvFEY0a1NcvOo8VhxzPK1uR1laQmdrRqPT67Js8TEsPepoekkPa987tM45yuUKZyxfSafXwxo1hYTOEEmaMj4ySqkY4w5oOs7jjeXoBYvwGhRK6OzV0JZ6q0k36R1w+WC8Z7JRU7khobOF955iFPHa9jfZNTlBaIP3XTQxxpL0uryw+VWiIMSj2VMJnSGhwyBkT22Ke55+hEKlSpKm71GeJFTKVdZuWM8Lm1/tlylaDpfQbytHj/hX6hyVYolbf/ZT1r28juGhEZIkIXUO7z3ee5xz9JKEclxm7/QkX/vR95hLzBn4GQaB/K4UznxqYw1Yg8nAx7HG0Ol1GSpV+OrV13PGytMh6dHrdvFAIYogKrBr9w6+8m//xPOvvcJQuUKaOrJQRnvX/8XDe8hpXZ9PoT2YsN+5pJ2EXrvbb4QMSB1YSzfpT8NdevYFfOKs8znxuKWEYcib29/isRfW8sNH7mOiNkW5WCJ1KSYj+SEqRoRx1F/CT52EPmx1UmBpTTWZ3jFJt9Em7SVZCScejzUW5x2NVpMwDFk0tpAgsOyZnKTZalIulojCkNQ7TKbiGhCVClQXDVMdHwHv8c5DjpJ17nbbGWuZ2LKL6bf29rt5azA2O0OB2eInsAGjQyN4PFO1aTyeKIgYGxnFzdTVmVpMMf3Bbafeoj3dpDlRZ3z5Emxo8Wl+pM7VoNAElonXdzK5dQ8msNgwyGyt570ndSnOOcIwJAojPJ40TbO5D9r/IsY2CmnurbPz1a341PfHKZrlmFc7sIGlsafG9Pa9BIVo7vv5+Pg+P5v5/Uy8o5DWVIu9W3f3e0AvoecxNfcHKVNvTcxkCy1CHI4kEkQB9V3TdJttTGAk9LzNaASWbrNDr9XNVbbIPcbgkpT2dHMm7l5Cz4fRxhi6jTY+dbmdH81pmgZjaNfb/ZIpB7HPzaAwTVL5dSRjrxp6fgnCQGYdydhr2m7eCjm89xQqMSawuZnZGJAiGrwnrsb9La6qoecppqmjUC4SlQp453K1cpXvEtpjw4B4uDwTd9XQ8xfYwDJy9IL+UqyMPgyJxJD2UqqLhimU4/5qoUqO+QuuSx2VhUMMLxkj7fbmvi/mv0fEGFwvoTRSYuyY8Vz1irnay+FTx4Ljj8JYs89ejlmxjTE6zvQBcLPC+n6MvfOUx6qML1+CCUyu9nLkbnOSd44FSxdRGqnss9vOGEsv6dHpdrHWau3lABKx844wCImjAmnqCMKAQrW07267VLvtDn1GSRzxSJl4pEza6eG6Kc1Om7HqENd96iqGyxXSNFW23l9SmPkzsCHfuus2ntmwntHKEISW6Jf3Q+cshGFe04tPXH9LZrFAx3Y5amwRqz//JU5dcSr0OqqvD2CgTRDya6eewvU338Tzm15huFwmSZL+tQo6sXIkxoqGJE0oF0us/twXOW35Sqbr0wQqOQ6s5HCOuBjTaLe47uabWP/6RipxiTTHB3YzK7Q1Zt8s4XnHLZ3GGNrdDv/8+S9x3um/Qa02SRjohuCDIXUppWKJielJrlr9N+ytTVEIo30uyzmQtsiMN9kTuX8nXKvbod5sUG81qbcaNDstoH9mr/93wFSjxlWXflIyfwgCG9Bqt1g0tpCv/NnnSNJ0rnc70LZQDb0/ma2l2W4DnpXHncDY0CjOpVhjaXU7vLxlI9PNBsOVKs12k18/6RQ++9t/RKtZJ7Da6/GBpQ4C6s06v3n6WVx54aXc+sCdjA0NU2s2AN6zLaqlcqYOL4RZkrnRbnH6shVcffmnOXP5SopREXCAIXGO1956g+/d/2PuX/sY3sM1l3+auFCkLqHnpWfsttv8+SVXsOb5J9m2ZxerTjqZv7jsyv22xXfv/zH3/e+jlIpxZqQOlp2z4oYj3+1Zas06n1h1Pqv/8sssXbSEXpLQTbr00pRe2sM5x6LRBVx87sdJeh2cc1zz+39Ks93KZNeX1wH26NhCdk3sphyX+PoXbmDp+OL9t8XZF1IMAx5e9zRxoZgJqY/4oHA2kCOVIf79+hsZGx6l3Wm9az3snCMIAnpJwlsTu1i25FiSg7gcUbw33nvCMGLHxC7CIGTR6AJanTZhELxrW2AM5bjEF77+dzz+8vNUS+UjfqXZEU9t1lianTaXnXMhR40v3q/Ms2WJc44oCFkumQ9Nckl6LB4bZ+HwCN1e911lnm0L7x3GGK686Hf76y8ZyND2yGeFvqCrTjoFnybve1dF/60/f1DX1oqD7zGTA1hptcbS7XZZeewyxkfG6GXgvZgwS4E0B/n/xaFri4Nuu4y0h0ZTYrBmaxQCIaGFkNBCSGghJLSQ0EJIaCEk9H7QO335xUvod9Lf/impc5kVtVL4C4yx9NKEjVu3gF5UzVdm9p4wDNm2Zyd7a9MH9ILuwAvtvacQRtz15BrarSbWBvs9r+ZBL64eRpx3+xXUA6l32DDiJ48/QKvbxmbgkIXNQtDKxZj1WzbyH/f9N+XhMUIbkLr0HV/WGCqlMkZ32x2WRNN/fi5617bAe4bHxvn5809x5xNrGC5X+98/0qVrFk6s9B9/L/DMhvXsndzDyctWMDY8SqEYUygU57663Q53PrGG8ZEFVEv94/badXeISkFruevJNYxUhhhfsGifdigUivTShDvW3M3q27+Ddx6bkVNDmTokGwUh//XAXTz43JN87LSzWDS6kDRNCKyl2e3wyLqn2TU5wfmnrtI10Ye01/RUijE/ffxB/uWO73Lp2RewcHhsri0anTaPr3+WV9/cTKkYEwRBZs4UZu7c/0ilylSjxu0P3TNTS/dvEbTGEgSWxWPjKjkOU69ZLZXn2iJJk7m2MBiKhQJDlWrmnqzLnNCp618gOFKJePvFasYYuklXg8LDmaln2mK4XME5/46xTxbbIsxqdkh/6bfeGJOfxysHLFOnzuUmkWjpWwwUElpIaCEktBASWggJLSS0EBJaCAn9YTHGvO/9d+KjG2ebtyB3ez3q7Wb/3Q9xyOLc6XVp5DDOuRHae084867K9r27CcNQS+GHMM61ZoNtE7uIchbnfGVoDKlL2T21F4xFZxAPDYG1TDZqtDrt3JUd+fq0xuC859kN6/uPb2ob6bzjvCOIIta/voHJRo0wQ3udB05oh6MYFXjpjU20Wy09FHSI+kEwrNv0yty/laEPVX3nPHFUYOO2N3h208sUi0Xtj57n+rkQRuyc2MkTLz9HuVjM7AObg1Fy0L/2oJv0uOfpR7A20LUH81xuFIoxj764lq27d1IIo9wNvHMndOpThkplHnzuCTa++RqlYklZet4GgwHtdpMfPnwvxUIBl8Nckb+Zc98PfL3V5JZ7f0Sg55DnJ1GkKaVyhZ889gAvbdlEqVDEeyehD0vwnWOoXOXupx7i3qceplIZmjnEKT5QqeEccTHm9W1v8M07f0A5jvd5vF5CH6YBTFyIWX37d9iy/U0qpQppmsrODxDHIAjwwI3fv5laq0EU5HfRKtdCF8KQyUaNG275GtPNOnExzsTtPXmKIcYQF2L+8Qff5plX11ONK6Q5HpPkepdP6hzVuMy6za9w3Tduot5uUiqWSJSpD6jMsNZSLpa46dZvcttD9zBSqeY+IeR+21rqUkYqQzz/2itc/42vsmd6kqGZhtFej/0PAONCkSAI+fvv38xtD/0PC4ZHcp2ZZ8nE3XYfOtt4T6kQs3XPDu5f+xgnLP4VTjzuBLxzJEmSqZdOj2R54bzDGkulOsyWHdv48rdX87Nnn2CsOjwwpdpACD3bYMWoQL3V4u4nH2KqNs3Jx5/I6MgYFuglyduuFhv8p5Vneyfnff899TCkVKqSpAl3PHwvf3vLv7Jl1/bM3Bo6X5iLrr1soPrlWVFrzQZLFozzh+dfzMWrzmP50UshsPikRy9Jcd71Z0UGTuyZewCtJbABQdS/Um3HxE4efWEtdzxyLy9t2UQ5jomCcCDKjIEWeq7rsf0l8ka7zWh1iLNXns6ZJ/4qpx2/giULxikXYyql8sDV2f1DEF2mmg0mGzXWb97AC5tf4fGXnmPb7p0UowKlYnEmcw9e0w+s0LONa40lSROanfbMrEiJaqnMwuExxkfGSF06UJtQrbU02i227tlJu9NmslHDYCgVixTCwnveyj8IDPS6cf/SxxRjDEPlytwBgVqryWS9xv+9sWlgS44oDLHGMloZmqulPwpz9B+ZjRBv38AUBgFhEBCb4oD+JvefyZu9OfSjxEdyZ89sl6t56sFD9wEICS2EhBZCQgshoYWEFkJCCyGhhZDQQkhoIaGFkNBCSGghJLQQElpIaCEktBASWggJLYSEFhJaCAkthIQWQkILIaGFhBZCQgshoYWQ0EJIaCGhhZDQQkhoISS0EBJaSGghJLQQEloICS0ktBASWggJLYSEFuIg+H+1yOV2ig+2dQAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F6F1E4; --paper-raised: #FBF8EF; --ink: #2B2620; --ink-soft: #6B6153;
+    --line: #D8CFB8; --line-strong: #C3B79C; --turmeric: #B87A15; --turmeric-deep: #8F5E0E;
+    --in-green: #3F6B4A; --in-green-bg: #E7EFE6; --out-rust: #A8432D; --out-rust-bg: #F3E5DF;
+    --danger: #A8432D;
+    --font-display: "Fraunces", serif; --font-body: "IBM Plex Sans", sans-serif; --font-mono: "IBM Plex Mono", monospace;
+    --radius: 3px;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --paper: #1E1B16; --paper-raised: #26221C; --ink: #EDE6D6; --ink-soft: #A79C87;
+    --line: #3B352A; --line-strong: #4A4335; --turmeric: #D89B3A; --turmeric-deep: #E9B563;
+    --in-green: #7FAE8B; --in-green-bg: #223026; --out-rust: #CC7A62; --out-rust-bg: #33241E;
+  }}
+  :root[data-theme="dark"] {
+    --paper: #1E1B16; --paper-raised: #26221C; --ink: #EDE6D6; --ink-soft: #A79C87;
+    --line: #3B352A; --line-strong: #4A4335; --turmeric: #D89B3A; --turmeric-deep: #E9B563;
+    --in-green: #7FAE8B; --in-green-bg: #223026; --out-rust: #CC7A62; --out-rust-bg: #33241E;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body { background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+  #app { min-height: 100%; display: flex; flex-direction: column; }
+
+  header.topbar { position: sticky; top: 0; z-index: 10; background: var(--paper); border-bottom: 1px solid var(--line);
+    padding: calc(14px + env(safe-area-inset-top, 0px)) 18px 12px; display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+  .brand { font-family: var(--font-display); font-weight: 600; font-size: 21px; letter-spacing: 0.2px; }
+  .brand small { display: block; font-family: var(--font-body); font-weight: 500; font-size: 11.5px; color: var(--ink-soft); letter-spacing: 0.3px; margin-top: 2px; }
+  .role-pill { font-size: 12px; color: var(--ink-soft); background: none; border: none; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; font-family: var(--font-body); padding: 4px 0; white-space: nowrap; }
+
+  main { flex: 1; padding: 18px 18px 96px; max-width: 560px; width: 100%; margin: 0 auto; }
+  .view { display: none; } .view.active { display: block; animation: fade .18s ease; }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+
+  h2.section-title { font-family: var(--font-display); font-weight: 600; font-size: 19px; margin: 4px 0 14px; }
+  p.hint { color: var(--ink-soft); font-size: 13px; margin: -8px 0 16px; }
+
+  .ledger { border-top: 1px solid var(--line-strong); }
+  .ledger-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 2px; border-bottom: 1px solid var(--line); }
+  .ledger-row .item-name { font-weight: 500; flex: 1; min-width: 0; }
+  .ledger-row .item-name .sub { display: block; font-size: 12px; color: var(--ink-soft); margin-top: 1px; }
+  .qty { font-family: var(--font-display); font-weight: 600; font-size: 17px; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .qty .unit { font-family: var(--font-body); font-weight: 500; font-size: 12px; color: var(--ink-soft); margin-left: 3px; }
+  .row-actions { display: flex; gap: 6px; margin-left: 4px; }
+  .icon-btn { border: none; background: none; color: var(--ink-soft); cursor: pointer; font-size: 15px; padding: 4px 6px; line-height: 1; border-radius: var(--radius); }
+  .icon-btn:hover { color: var(--ink); background: var(--line); }
+  .icon-btn.danger:hover { color: var(--danger); }
+
+  .empty-state { padding: 34px 8px; text-align: center; color: var(--ink-soft); font-size: 13.5px; }
+
+  .btn { font-family: var(--font-body); font-weight: 600; font-size: 14px; border: 1px solid var(--ink); background: var(--ink); color: var(--paper); padding: 11px 18px; border-radius: var(--radius); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
+  .btn:active { transform: translateY(1px); }
+  .btn:disabled { opacity: .45; cursor: default; }
+  .btn.secondary { background: transparent; color: var(--ink); }
+  .btn.turmeric { background: var(--turmeric); border-color: var(--turmeric); color: #fff; }
+  .btn.block { width: 100%; }
+  .btn.small { padding: 7px 12px; font-size: 13px; }
+
+  label { display: block; font-size: 12.5px; font-weight: 600; color: var(--ink-soft); margin: 14px 0 6px; }
+  label:first-child { margin-top: 0; }
+  input[type="text"], input[type="number"], input[type="date"], select, textarea {
+    width: 100%; font-family: var(--font-body); font-size: 15px; padding: 10px 11px;
+    border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--paper-raised); color: var(--ink); }
+  textarea { font-family: var(--font-mono); font-size: 12px; line-height: 1.4; resize: vertical; }
+  input:focus, select:focus, textarea:focus { outline: 2px solid var(--turmeric); outline-offset: 1px; }
+  .field-row { display: flex; gap: 10px; } .field-row > div { flex: 1; }
+
+  .card { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 6px; padding: 16px; margin-bottom: 16px; }
+
+  .plusminus { display: flex; gap: 10px; } .plusminus .col { flex: 1; }
+  .plusminus .col label { color: var(--in-green); } .plusminus .col.out label { color: var(--out-rust); }
+
+  .pending-row { display: flex; align-items: center; gap: 10px; padding: 10px 2px; border-bottom: 1px solid var(--line); }
+  .pending-row .tag { font-family: var(--font-mono); font-size: 11px; padding: 2px 6px; border-radius: 3px; font-weight: 500; }
+  .tag.in { background: var(--in-green-bg); color: var(--in-green); }
+  .tag.out { background: var(--out-rust-bg); color: var(--out-rust); }
+  .pending-row .desc { flex: 1; font-size: 13.5px; }
+  .pending-row .desc .date { display: block; font-size: 11.5px; color: var(--ink-soft); }
+
+  nav.tabbar { position: fixed; left: 0; right: 0; bottom: 0; display: flex; background: var(--paper-raised); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom, 0px); z-index: 10; }
+  nav.tabbar button { flex: 1; background: none; border: none; padding: 10px 4px 9px; color: var(--ink-soft); font-family: var(--font-body); font-size: 11.5px; font-weight: 500; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+  nav.tabbar button .ic { font-size: 18px; }
+  nav.tabbar button.active { color: var(--turmeric-deep); }
+
+  .onboard { min-height: 100%; display: flex; flex-direction: column; justify-content: center; padding: 32px 24px calc(32px + env(safe-area-inset-bottom, 0px)); max-width: 460px; margin: 0 auto; }
+  .onboard .brand-mark { font-family: var(--font-display); font-size: 34px; font-weight: 600; margin-bottom: 2px; }
+  .onboard .tagline { color: var(--ink-soft); font-size: 14px; margin-bottom: 36px; }
+  .role-card { display: block; width: 100%; text-align: left; background: var(--paper-raised); border: 1px solid var(--line-strong); border-radius: 8px; padding: 16px 18px; margin-bottom: 12px; cursor: pointer; font-family: var(--font-body); color: var(--ink); }
+  .role-card:hover { border-color: var(--turmeric); }
+  .role-card .rc-title { font-family: var(--font-display); font-weight: 600; font-size: 17px; }
+  .role-card .rc-sub { font-size: 12.5px; color: var(--ink-soft); margin-top: 3px; }
+  .name-step { display: none; } .name-step.active { display: block; }
+
+  .variance-pos { color: var(--in-green); } .variance-neg { color: var(--out-rust); } .variance-zero { color: var(--ink-soft); }
+
+  .imp-group { margin-bottom: 20px; }
+  .imp-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+  .imp-head .who { font-family: var(--font-display); font-weight: 600; font-size: 14.5px; }
+  .imp-head .when { font-size: 11.5px; color: var(--ink-soft); white-space: nowrap; }
+  table.reg { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  table.reg th { text-align: left; font-size: 11px; font-weight: 600; color: var(--ink-soft); text-transform: uppercase; letter-spacing: .4px; padding: 6px 8px; border-bottom: 1px solid var(--line-strong); }
+  table.reg th.num, table.reg td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  table.reg td { padding: 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.reg td.item { font-weight: 500; }
+  table.reg .in-cell { color: var(--in-green); font-weight: 600; }
+  table.reg .out-cell { color: var(--out-rust); font-weight: 600; }
+  table.reg .u { color: var(--ink-soft); font-weight: 400; font-size: 11.5px; margin-left: 2px; }
+  table.reg td.del { width: 52px; text-align: center; padding: 8px 4px; white-space: nowrap; }
+  table.reg td.del button { border: none; background: none; color: var(--ink-soft); cursor: pointer; font-size: 13px; padding: 2px 3px; line-height: 1; }
+  table.reg td.del button:hover { color: var(--danger); }
+  table.reg td.del button.edit:hover { color: var(--turmeric-deep); }
+
+  .unit-bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .unit-bar .lbl { font-size: 12px; color: var(--ink-soft); }
+  .seg { display: inline-flex; border: 1px solid var(--line-strong); border-radius: 20px; overflow: hidden; }
+  .seg button { border: none; background: transparent; color: var(--ink-soft); font-size: 12.5px; font-weight: 600; padding: 5px 13px; cursor: pointer; font-family: var(--font-body); }
+  .seg button.on { background: var(--turmeric); color: #fff; }
+  .imp-head .trash { border: none; background: none; color: var(--ink-soft); cursor: pointer; font-size: 14px; padding: 2px 4px; margin-left: 6px; line-height: 1; }
+  .imp-head .trash:hover { color: var(--danger); }
+
+  .pivot-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--line); border-radius: 6px; }
+  table.pivot { border-collapse: collapse; font-size: 12.5px; white-space: nowrap; }
+  table.pivot th, table.pivot td { border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); padding: 6px 9px; text-align: center; font-variant-numeric: tabular-nums; }
+  table.pivot thead th { background: var(--paper-raised); font-size: 10.5px; font-weight: 600; color: var(--ink-soft); text-transform: uppercase; letter-spacing: .3px; }
+  table.pivot thead tr.dates th { font-size: 12px; color: var(--ink); text-transform: none; letter-spacing: 0; }
+  table.pivot .rowhead { position: sticky; left: 0; z-index: 2; background: var(--paper); text-align: left; border-right: 2px solid var(--line-strong); }
+  table.pivot thead .rowhead { background: var(--paper-raised); z-index: 3; }
+  table.pivot .rowhead .it { font-weight: 600; }
+  table.pivot .rowhead .ck { display: block; font-size: 11px; color: var(--ink-soft); font-weight: 400; }
+  table.pivot td.in { color: var(--in-green); font-weight: 600; }
+  table.pivot td.out { color: var(--out-rust); font-weight: 600; }
+  table.pivot td.z { color: var(--line-strong); }
+  table.pivot th.plus { color: var(--in-green); }
+  table.pivot th.minus { color: var(--out-rust); }
+  table.pivot td.stock, table.pivot th.stockhead { border-left: 2px solid var(--line-strong); font-weight: 600; color: var(--ink); }
+  table.pivot th.stockhead { color: var(--turmeric-deep); text-transform: none; letter-spacing: 0; font-size: 12px; }
+  table.pivot.meals th, table.pivot.meals td { text-align: left; white-space: normal; vertical-align: top; }
+  table.pivot.meals td.mealcell { cursor: pointer; min-width: 96px; }
+  table.pivot.meals td.mealcell:hover { background: var(--paper-raised); }
+  table.pivot.meals td.rowhead { white-space: nowrap; font-weight: 600; }
+  table.pivot.meals .z { color: var(--line-strong); }
+
+  .toast { position: fixed; left: 50%; bottom: calc(78px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%) translateY(8px); background: var(--ink); color: var(--paper); font-size: 13px; padding: 10px 16px; border-radius: 6px; opacity: 0; pointer-events: none; transition: opacity .2s ease, transform .2s ease; z-index: 20; max-width: 90vw; text-align: center; }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  .modal-backdrop { position: fixed; inset: 0; background: rgba(20,17,12,.4); display: flex; align-items: flex-end; justify-content: center; z-index: 30; }
+  .modal-backdrop.hidden { display: none; }
+  .modal-sheet { background: var(--paper); width: 100%; max-width: 460px; border-radius: 14px 14px 0 0; padding: 20px 20px calc(24px + env(safe-area-inset-bottom, 0px)); border: 1px solid var(--line); border-bottom: none; max-height: 88vh; overflow-y: auto; }
+  .modal-sheet h3 { font-family: var(--font-display); font-size: 17px; margin: 0 0 14px; }
+  .modal-actions { display: flex; gap: 10px; margin-top: 18px; }
+  .modal-actions .btn { flex: 1; }
+
+  ::selection { background: var(--turmeric); color: #fff; }
+  a { color: var(--turmeric-deep); }
+
+  #installBanner { display: none; align-items: center; gap: 10px; justify-content: space-between; background: var(--turmeric); color: #fff; padding: 10px 14px; font-size: 12.5px; line-height: 1.35; }
+  #installBanner .ib-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+  #installBanner .ib-x { background: none; border: none; color: #fff; font-size: 15px; cursor: pointer; opacity: .85; line-height: 1; padding: 2px 4px; }
+  #installBanner .btn.small { background: #fff; color: var(--turmeric-deep); border-color: #fff; padding: 6px 12px; }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- ONBOARDING -->
+  <div class="onboard" id="onboard">
+    <div class="brand-mark">Bhandar</div>
+    <div class="tagline">Your kitchen's stock register — on your phone, no account needed.</div>
+    <div id="roleStep">
+      <button class="role-card" data-role="owner">
+        <div class="rc-title">I'm the owner</div>
+        <div class="rc-sub">Keep the master stock, review what cooks send in, run stock checks.</div>
+      </button>
+      <button class="role-card" data-role="cook">
+        <div class="rc-title">I'm a cook</div>
+        <div class="rc-sub">Log what comes in from the mandi and goes to the kitchen, then send it to the owner.</div>
+      </button>
+    </div>
+    <div class="name-step" id="nameStep">
+      <label for="cookNameInput">What should we call you?</label>
+      <input type="text" id="cookNameInput" placeholder="e.g. Cook 1, or your name">
+      <button class="btn turmeric block" id="cookNameContinue" style="margin-top:16px;">Continue</button>
+      <button class="btn secondary block" id="cookNameBack" style="margin-top:8px;">Back</button>
+    </div>
+  </div>
+
+  <!-- MAIN APP -->
+  <div id="mainApp" style="display:none;">
+    <div id="installBanner">
+      <span class="ib-text">📌 Add to Home Screen and always open Bhandar from that icon — this keeps all your data in one place.</span>
+      <span class="ib-actions"><button id="installBtn" class="btn small">Add</button><button id="installDismiss" class="ib-x" title="Hide">✕</button></span>
+    </div>
+    <header class="topbar">
+      <div class="brand">Bhandar<small id="roleLabel">—</small></div>
+      <span style="display:flex;gap:12px;align-items:baseline;">
+        <button class="role-pill" id="backupBtn" style="display:none;">backup</button>
+        <button class="role-pill" id="switchRoleBtn">switch</button>
+      </span>
+    </header>
+
+    <main>
+      <!-- OWNER: STOCK -->
+      <section class="view" id="view-stock">
+        <h2 class="section-title">Stock on hand</h2>
+        <p class="hint">Your master register. Cooks' entries update it once you import them.</p>
+        <div class="unit-bar" id="unitToggleBar" style="margin:-2px 0 10px;"></div>
+        <div class="unit-bar" style="margin:0 0 14px;">
+          <span class="lbl">Sort:</span>
+          <span class="seg" id="sortSeg">
+            <button data-sort="added">Added order</button>
+            <button data-sort="az">A&#8211;Z</button>
+          </span>
+        </div>
+        <div class="ledger" id="inventoryList"></div>
+        <p class="hint" id="shareCatalogNote" style="display:none;margin:16px 0 -2px;">You changed the item list — send it once so cooks get the new items. No need to send again until it changes.</p>
+        <button class="btn secondary block" id="shareCatalogBtn" style="margin-top:18px;">Send item list to cooks</button>
+        <div class="card" id="addItemCard" style="margin-top:16px;">
+          <label for="newItemName">Add a new item</label>
+          <input type="text" id="newItemName" placeholder="e.g. Arhar Dal">
+          <div class="field-row">
+            <div><label for="newItemUnit">Unit</label>
+              <select id="newItemUnit"><option value="kg">kg</option><option value="g">g</option><option value="l">l</option><option value="ml">ml</option><option value="pcs">pcs</option><option value="pkt">pkt</option></select></div>
+            <div><label for="newItemOpening">Opening balance</label><input type="number" id="newItemOpening" placeholder="0" min="0" step="any"></div>
+          </div>
+          <button class="btn turmeric block" id="addItemBtn" style="margin-top:16px;">Add item</button>
+        </div>
+      </section>
+
+      <!-- OWNER: REGISTER -->
+      <section class="view" id="view-log">
+        <h2 class="section-title">Register</h2>
+        <p class="hint" id="logHint">Dates across the top; scroll sideways. Each cook is a separate row.</p>
+        <button class="btn turmeric block" id="ownerAddEntryBtn" style="margin-bottom:14px;">+ Add an entry</button>
+        <div class="unit-bar" style="margin:-2px 0 12px;">
+          <span class="seg" id="logViewSeg">
+            <button data-lv="date">By date</button>
+            <button data-lv="import">By import</button>
+          </span>
+        </div>
+        <div id="logDateRange" class="unit-bar" style="margin:-4px 0 14px;">
+          <span class="lbl">From</span><input type="date" id="logFrom" style="width:auto;padding:6px 8px;">
+          <span class="lbl">to</span><input type="date" id="logTo" style="width:auto;padding:6px 8px;">
+        </div>
+        <div id="logList"></div>
+      </section>
+
+      <!-- OWNER: IMPORT -->
+      <section class="view" id="view-import">
+        <h2 class="section-title">Import from a cook</h2>
+        <p class="hint">Paste the code a cook sent you (WhatsApp, message, anywhere). You'll review before it counts.</p>
+        <div class="card">
+          <label for="importCodeBox">Cook's code</label>
+          <textarea id="importCodeBox" rows="5" placeholder="Paste the BHNDR code here…"></textarea>
+          <button class="btn turmeric block" id="importReadBtn" style="margin-top:14px;">Read code</button>
+        </div>
+      </section>
+
+      <!-- OWNER: CHECK -->
+      <section class="view" id="view-check">
+        <h2 class="section-title">Stock checks</h2>
+        <p class="hint">Compare the register against what's actually on the shelf.</p>
+        <button class="btn turmeric block" id="newCheckBtn" style="margin-bottom:18px;">New stock check</button>
+        <div id="checkList"></div>
+      </section>
+
+      <!-- OWNER: MEALS -->
+      <section class="view" id="view-meals">
+        <h2 class="section-title">Meals register</h2>
+        <p class="hint">What was actually cooked each day, by meal. Tap any cell to edit.</p>
+        <div class="unit-bar" style="margin:-2px 0 14px;flex-wrap:wrap;gap:8px;">
+          <button class="btn secondary small" id="manageDishesBtn">Manage dishes</button>
+          <button class="btn secondary small" id="sendDishesBtn">Send dish list to cooks</button>
+        </div>
+        <button class="btn turmeric block" id="addMealBtn" style="margin-bottom:16px;">+ Add a meal</button>
+        <div id="mealTable"></div>
+      </section>
+
+      <!-- COOK: STOCK -->
+      <section class="view" id="view-cookstock">
+        <h2 class="section-title">Item list</h2>
+        <p class="hint">The owner sends a new list only when items change. Loading it replaces your current list.</p>
+        <button class="btn secondary block" id="loadCatalogBtn" style="margin-bottom:16px;">Load item list from owner</button>
+        <div class="ledger" id="cookInventoryList"></div>
+      </section>
+
+      <!-- COOK: ADD ENTRY -->
+      <section class="view" id="view-entry">
+        <h2 class="section-title">Log an entry</h2>
+        <div class="card">
+          <label for="entryItem">Item</label>
+          <select id="entryItem"></select>
+          <div id="newItemInlineWrap" style="display:none;">
+            <label for="entryNewItem">New item name</label>
+            <input type="text" id="entryNewItem" placeholder="Type the item name">
+          </div>
+          <label for="entryUnit">Unit for this entry</label>
+          <select id="entryUnit"></select>
+          <label for="entryDate">Date</label>
+          <input type="date" id="entryDate">
+          <div class="plusminus" style="margin-top:14px;">
+            <div class="col"><label for="entryIn">+ From mandi</label><input type="number" id="entryIn" placeholder="0" min="0" step="any"></div>
+            <div class="col out"><label for="entryOut">− To kitchen</label><input type="number" id="entryOut" placeholder="0" min="0" step="any"></div>
+          </div>
+          <button class="btn turmeric block" id="addEntryBtn" style="margin-top:16px;">Add to today's list</button>
+        </div>
+        <h3 id="entryRecentTitle" style="font-family:var(--font-display);font-weight:600;font-size:15px;margin:22px 0 8px;display:none;">Added so far</h3>
+        <div id="entryRecent"></div>
+      </section>
+
+      <!-- COOK: PENDING / SEND -->
+      <section class="view" id="view-pending">
+        <h2 class="section-title">To send to owner</h2>
+        <p class="hint" id="pendingHint">These stay on your phone until you send them.</p>
+        <div id="pendingList"></div>
+        <button class="btn turmeric block" id="sendBtn" style="margin-top:18px;display:none;">Send to owner</button>
+      </section>
+
+      <!-- COOK: MEALS -->
+      <section class="view" id="view-cookmeals">
+        <h2 class="section-title">Log meals cooked</h2>
+        <p class="hint">Pick the dishes prepared for each meal, then send to the owner.</p>
+        <button class="btn secondary block" id="loadDishesBtn" style="margin-bottom:14px;">Load dish list from owner</button>
+        <div class="card">
+          <label for="mealDate" style="margin-top:0;">Date</label>
+          <input type="date" id="mealDate">
+          <label for="mealType">Meal</label>
+          <select id="mealType"><option value="breakfast">Breakfast</option><option value="lunch">Lunch</option><option value="dinner">Dinner</option></select>
+          <label>Dishes prepared</label>
+          <div id="mealDishChecks"></div>
+          <button class="btn turmeric block" id="addMealPendingBtn" style="margin-top:14px;">Add to list</button>
+        </div>
+        <div id="mealPendingList"></div>
+        <button class="btn turmeric block" id="sendMealsBtn" style="margin-top:16px;display:none;">Send meals to owner</button>
+      </section>
+    </main>
+
+    <nav class="tabbar" id="ownerTabs" style="display:none;">
+      <button data-view="view-stock"><span class="ic">📒</span>Stock</button>
+      <button data-view="view-log"><span class="ic">🧾</span>Register</button>
+      <button data-view="view-meals"><span class="ic">🍽️</span>Meals</button>
+      <button data-view="view-import"><span class="ic">↧</span>Import</button>
+      <button data-view="view-check"><span class="ic">⚖️</span>Check</button>
+    </nav>
+    <nav class="tabbar" id="cookTabs" style="display:none;">
+      <button data-view="view-cookstock"><span class="ic">📒</span>Items</button>
+      <button data-view="view-entry"><span class="ic">✎</span>Add entry</button>
+      <button data-view="view-pending"><span class="ic">↥</span>Send</button>
+      <button data-view="view-cookmeals"><span class="ic">🍽️</span>Meals</button>
+    </nav>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <div class="modal-backdrop hidden" id="modalBackdrop"><div class="modal-sheet" id="modalSheet"></div></div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var CODE_PREFIX = "BHNDR1:";
+
+  // ---------- storage helpers ----------
+  function load(key, fallback) {
+    try { var v = localStorage.getItem(key); return v ? JSON.parse(v) : fallback; }
+    catch (e) { return fallback; }
+  }
+  function save(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {} }
+
+  var role = localStorage.getItem('bhandar_role');
+  var cookName = localStorage.getItem('bhandar_cookname') || '';
+  var FORCE_ROLE = 'cook'; // set to 'owner' or 'cook' in role-locked builds; null = show the picker
+
+  // owner data
+  var inventory = load('bk_owner_inventory', []);
+  var logEntries = load('bk_owner_log', []);
+  var checks = load('bk_owner_checks', []);
+  // cook data
+  var catalog = load('bk_cook_items', []);   // [{name, unit}]
+  var pending = load('bk_cook_pending', []);
+  var catalogDirty = load('bk_owner_catalog_dirty', false); // owner has unsent item-list changes
+  var lastSent = load('bk_cook_lastsent', null); // {entries, sentAt} — kept so a cook can resend if owner missed it
+
+  // unit families for the cook's kg/gm (and l/ml) option
+  var UNIT_FAMILY = { kg: ['kg', 'g'], g: ['kg', 'g'], l: ['l', 'ml'], ml: ['l', 'ml'] };
+  var TO_BASE = { kg: 1, g: 0.001, l: 1, ml: 0.001 }; // multiply to get kg or l
+  function unitOptionsFor(baseUnit) { return UNIT_FAMILY[baseUnit] ? UNIT_FAMILY[baseUnit].slice() : [baseUnit]; }
+  function convertQty(qty, fromUnit, toUnit) {
+    if (fromUnit === toUnit) return qty;
+    if (TO_BASE[fromUnit] == null || TO_BASE[toUnit] == null) return qty;
+    // convert via base (kg or l), only within same family
+    return Math.round((qty * TO_BASE[fromUnit] / TO_BASE[toUnit]) * 100000) / 100000;
+  }
+
+  // owner's chosen display units (view weights in kg or g, volumes in l or ml)
+  var displayPrefs = load('bk_owner_displayprefs', { weight: 'kg', volume: 'l' });
+  function displayUnitFor(baseUnit) {
+    if (baseUnit === 'kg' || baseUnit === 'g') return displayPrefs.weight;
+    if (baseUnit === 'l' || baseUnit === 'ml') return displayPrefs.volume;
+    return baseUnit;
+  }
+  function disp(qty, baseUnit) { var u = displayUnitFor(baseUnit); return { q: convertQty(qty, baseUnit, u), u: u }; }
+
+  function renderUnitToggle() {
+    var bar = $('#unitToggleBar'); if (!bar) return;
+    var hasW = inventory.some(function (i) { return i.unit === 'kg' || i.unit === 'g'; });
+    var hasV = inventory.some(function (i) { return i.unit === 'l' || i.unit === 'ml'; });
+    if (!hasW && !hasV) { bar.innerHTML = ''; return; }
+    var html = '<span class="lbl">Show in:</span>';
+    if (hasW) html += '<span class="seg" data-fam="weight"><button data-u="kg" class="' + (displayPrefs.weight === 'kg' ? 'on' : '') + '">kg</button><button data-u="g" class="' + (displayPrefs.weight === 'g' ? 'on' : '') + '">g</button></span>';
+    if (hasV) html += '<span class="seg" data-fam="volume"><button data-u="l" class="' + (displayPrefs.volume === 'l' ? 'on' : '') + '">L</button><button data-u="ml" class="' + (displayPrefs.volume === 'ml' ? 'on' : '') + '">ml</button></span>';
+    bar.innerHTML = html;
+    $all('.seg button', bar).forEach(function (b) {
+      b.addEventListener('click', function () {
+        var fam = b.parentNode.getAttribute('data-fam');
+        displayPrefs[fam] = b.getAttribute('data-u');
+        save('bk_owner_displayprefs', displayPrefs);
+        renderUnitToggle(); renderInventory(); renderLog();
+      });
+    });
+  }
+
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $all = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+  function todayISO() { var d = new Date(), o = d.getTimezoneOffset(); return new Date(d.getTime() - o * 60000).toISOString().slice(0, 10); }
+  function fmtDate(iso) { if (!iso) return ''; var d = new Date(iso); if (isNaN(d)) return iso; return d.toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' }); }
+  function fmtNum(n) { n = Number(n) || 0; return (Math.round(n * 100) / 100).toString(); }
+  function escapeHtml(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function toast(msg) { var t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toast._h); toast._h = setTimeout(function () { t.classList.remove('show'); }, 2400); }
+  function cryptoId() { return 'p' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8); }
+
+  // ---------- encode / decode sync codes (unicode-safe base64) ----------
+  function encodePayload(obj) {
+    try { return CODE_PREFIX + btoa(unescape(encodeURIComponent(JSON.stringify(obj)))); }
+    catch (e) { return CODE_PREFIX + btoa(JSON.stringify(obj)); }
+  }
+  function decodePayload(raw) {
+    raw = (raw || '').trim();
+    var i = raw.indexOf(CODE_PREFIX);
+    if (i === -1) return null;
+    var rest = raw.slice(i + CODE_PREFIX.length);
+    var m = rest.match(/[A-Za-z0-9+/=]+/);   // grab only the code chars, ignore any surrounding text
+    if (!m) return null;
+    var b64 = m[0];
+    try { return JSON.parse(decodeURIComponent(escape(atob(b64)))); }
+    catch (e) { try { return JSON.parse(atob(b64)); } catch (e2) { return null; } }
+  }
+
+  // ---------- modal ----------
+  function openModal(title, bodyHtml, actions) {
+    var sheet = $('#modalSheet');
+    sheet.innerHTML = '<h3></h3><div class="modal-body"></div><div class="modal-actions"></div>';
+    sheet.querySelector('h3').textContent = title;
+    sheet.querySelector('.modal-body').innerHTML = bodyHtml || '';
+    var ae = sheet.querySelector('.modal-actions');
+    actions.forEach(function (a) {
+      var b = document.createElement('button');
+      b.className = 'btn ' + (a.kind || 'secondary'); b.textContent = a.label;
+      b.addEventListener('click', function () { if (a.keepOpen) { a.action && a.action(); } else { closeModal(); a.action && a.action(); } });
+      ae.appendChild(b);
+    });
+    $('#modalBackdrop').classList.remove('hidden');
+  }
+  function closeModal() { $('#modalBackdrop').classList.add('hidden'); }
+  $('#modalBackdrop').addEventListener('click', function (e) { if (e.target === $('#modalBackdrop')) closeModal(); });
+
+  // ---------- onboarding ----------
+  function showOnboardIfNeeded() {
+    if (role === 'owner' || role === 'cook') enterApp();
+    else { $('#onboard').style.display = 'flex'; $('#mainApp').style.display = 'none'; }
+  }
+  $all('.role-card').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var chosen = btn.getAttribute('data-role');
+      if (chosen === 'owner') { role = 'owner'; localStorage.setItem('bhandar_role', 'owner'); enterApp(); }
+      else { $('#roleStep').style.display = 'none'; $('#nameStep').classList.add('active'); }
+    });
+  });
+  $('#cookNameBack').addEventListener('click', function () { $('#nameStep').classList.remove('active'); $('#roleStep').style.display = 'block'; });
+  $('#cookNameContinue').addEventListener('click', function () {
+    cookName = ($('#cookNameInput').value.trim()) || 'Cook';
+    role = 'cook'; localStorage.setItem('bhandar_role', 'cook'); localStorage.setItem('bhandar_cookname', cookName); enterApp();
+  });
+
+  $('#switchRoleBtn').addEventListener('click', function () {
+    openModal('Switch role on this phone?',
+      '<p style="color:var(--ink-soft);font-size:13.5px;margin:0;">You\u2019ll pick owner or cook again. Nothing saved on this phone is deleted.</p>',
+      [{ label: 'Cancel', kind: 'secondary' },
+       { label: 'Switch', kind: 'turmeric', action: function () {
+          localStorage.removeItem('bhandar_role'); localStorage.removeItem('bhandar_cookname');
+          role = null; $('#roleStep').style.display = 'block'; $('#nameStep').classList.remove('active'); $('#cookNameInput').value = '';
+          showOnboardIfNeeded();
+        } }]);
+  });
+
+  function enterApp() {
+    $('#onboard').style.display = 'none'; $('#mainApp').style.display = 'block';
+    maybeShowInstallBanner();
+    if (role === 'owner') {
+      $('#roleLabel').textContent = 'Owner';
+      $('#ownerTabs').style.display = 'flex'; $('#cookTabs').style.display = 'none';
+      var bk = $('#backupBtn'); if (bk) bk.style.display = 'inline';
+      migrateLog();
+      renderUnitToggle(); renderInventory(); renderLog(); renderChecks(); renderMealTable(); switchView('view-stock');
+    } else {
+      $('#roleLabel').textContent = 'Cook \u00b7 ' + cookName;
+      $('#cookTabs').style.display = 'flex'; $('#ownerTabs').style.display = 'none';
+      var bkc = $('#backupBtn'); if (bkc) bkc.style.display = 'none';
+      $('#entryDate').value = todayISO(); $('#mealDate').value = todayISO();
+      renderCookCatalog(); renderEntryOptions(); renderPending(); renderEntryRecent(); renderCookMealDishes(); renderMealPending(); switchView('view-cookstock');
+    }
+  }
+
+  // ---------- view switching ----------
+  function switchView(id) {
+    $all('.view').forEach(function (v) { v.classList.toggle('active', v.id === id); });
+    $all('nav.tabbar button').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-view') === id); });
+  }
+  $all('nav.tabbar button').forEach(function (b) { b.addEventListener('click', function () { switchView(b.getAttribute('data-view')); }); });
+
+  // ================= OWNER =================
+  function renderInventory() {
+    var el = $('#inventoryList');
+    if (!inventory.length) { el.innerHTML = '<div class="empty-state">No items yet. Add your first item below \u2014 Arhar Dal, Atta, whatever you track.</div>'; return; }
+    el.innerHTML = '';
+    sortedInventory().forEach(function (item) {
+      var row = document.createElement('div'); row.className = 'ledger-row';
+      var dc = disp(item.currentQty, item.unit), dop = disp(item.openingBalance, item.unit);
+      row.innerHTML = '<div class="item-name">' + escapeHtml(item.name) + '<span class="sub">opening ' + fmtNum(dop.q) + ' ' + dop.u + '</span></div>' +
+        '<div class="qty">' + fmtNum(dc.q) + '<span class="unit">' + dc.u + '</span></div>' +
+        '<div class="row-actions"><button class="icon-btn" data-adjust="' + item.id + '" title="Correct quantity">\u270e</button>' +
+        '<button class="icon-btn danger" data-delete="' + item.id + '" title="Delete item">\u2715</button></div>';
+      el.appendChild(row);
+    });
+    $all('[data-adjust]', el).forEach(function (b) { b.addEventListener('click', function () { adjustItem(b.getAttribute('data-adjust')); }); });
+    $all('[data-delete]', el).forEach(function (b) { b.addEventListener('click', function () { deleteItem(b.getAttribute('data-delete')); }); });
+    updateShareBtn();
+    renderUnitToggle();
+    renderSortSeg();
+  }
+
+  function updateShareBtn() {
+    var btn = $('#shareCatalogBtn'), note = $('#shareCatalogNote');
+    if (!btn) return;
+    if (!inventory.length) { btn.style.display = 'none'; if (note) note.style.display = 'none'; return; }
+    btn.style.display = '';
+    if (catalogDirty) {
+      btn.classList.remove('secondary'); btn.classList.add('turmeric');
+      btn.textContent = 'Send updated list to cooks';
+      if (note) note.style.display = 'block';
+    } else {
+      btn.classList.add('secondary'); btn.classList.remove('turmeric');
+      btn.textContent = 'Send item list to cooks';
+      if (note) note.style.display = 'none';
+    }
+  }
+  function markCatalogDirty() { catalogDirty = true; save('bk_owner_catalog_dirty', true); }
+
+  function migrateLog() {
+    var changed = false;
+    logEntries.forEach(function (e) { if (!e.uid) { e.uid = 'l' + cryptoId(); changed = true; } });
+    if (changed) save('bk_owner_log', logEntries);
+  }
+
+  $all('#logViewSeg button').forEach(function (b) {
+    b.addEventListener('click', function () { logView = b.getAttribute('data-lv'); save('bk_owner_logview', logView); renderLog(); });
+  });
+  $('#logFrom').addEventListener('change', function () { userSetRange = true; renderLog(); });
+  $('#logTo').addEventListener('change', function () { userSetRange = true; renderLog(); });
+
+  $('#addItemBtn').addEventListener('click', function () {
+    var name = $('#newItemName').value.trim(), unit = $('#newItemUnit').value, opening = parseFloat($('#newItemOpening').value) || 0;
+    if (!name) { toast('Give the item a name first.'); return; }
+    inventory.push({ id: cryptoId(), name: name, unit: unit, openingBalance: opening, currentQty: opening, createdAt: new Date().toISOString() });
+    save('bk_owner_inventory', inventory);
+    markCatalogDirty();
+    $('#newItemName').value = ''; $('#newItemOpening').value = '';
+    toast('Added ' + name + '.'); renderInventory();
+  });
+
+  function deleteItem(id) {
+    var item = inventory.find(function (i) { return i.id === id; }); if (!item) return;
+    openModal('Delete ' + item.name + '?',
+      '<p style="color:var(--ink-soft);font-size:13.5px;margin:0;">Removes it from your list. Past register entries stay.</p>',
+      [{ label: 'Cancel', kind: 'secondary' },
+       { label: 'Delete', kind: 'turmeric', action: function () { inventory = inventory.filter(function (i) { return i.id !== id; }); save('bk_owner_inventory', inventory); markCatalogDirty(); renderInventory(); toast('Item deleted.'); } }]);
+  }
+
+  function adjustItem(id) {
+    var item = inventory.find(function (i) { return i.id === id; }); if (!item) return;
+    openModal('Correct ' + item.name,
+      '<label for="adjustQty" style="margin-top:0;">Actual quantity (' + item.unit + ')</label><input type="number" id="adjustQty" step="any" value="' + item.currentQty + '">',
+      [{ label: 'Cancel', kind: 'secondary' },
+       { label: 'Save', kind: 'turmeric', action: function () {
+          var val = parseFloat($('#adjustQty').value); if (isNaN(val)) return;
+          logEntries.unshift({ uid: 'l' + cryptoId(), item: item.name, unit: item.unit, type: 'adjust', qty: Math.abs(val - item.currentQty), cook: 'Owner', date: todayISO(), note: 'Corrected to ' + val + ' ' + item.unit, importId: 'own-' + cryptoId(), importedAt: new Date().toISOString() });
+          item.currentQty = val; save('bk_owner_inventory', inventory); save('bk_owner_log', logEntries);
+          renderInventory(); renderLog(); toast('Quantity corrected.');
+        } }]);
+    setTimeout(function () { var f = $('#adjustQty'); if (f) f.focus(); }, 50);
+  }
+
+  function fmtDateTime(iso) { if (!iso) return ''; var d = new Date(iso); if (isNaN(d)) return iso; return d.toLocaleDateString(undefined, { day: 'numeric', month: 'short' }) + ', ' + d.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' }); }
+
+  var logView = load('bk_owner_logview', 'date');
+  var userSetRange = false;
+  var sortMode = load('bk_owner_sort', 'added'); // 'added' | 'az' — display order only, never changes stored data
+
+  function sortedInventory() {
+    if (sortMode === 'az') return inventory.slice().sort(function (a, b) { return String(a.name).localeCompare(String(b.name), undefined, { sensitivity: 'base' }); });
+    return inventory.slice();
+  }
+  function renderSortSeg() { $all('#sortSeg button').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-sort') === sortMode); }); }
+  $all('#sortSeg button').forEach(function (b) {
+    b.addEventListener('click', function () { sortMode = b.getAttribute('data-sort'); save('bk_owner_sort', sortMode); renderSortSeg(); renderInventory(); });
+  });
+
+  function renderLog() {
+    $all('#logViewSeg button').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-lv') === logView); });
+    if (logView === 'date') {
+      $('#logHint').textContent = 'Dates across the top; scroll sideways. Each cook is a separate row.';
+      $('#logDateRange').style.display = 'flex';
+      renderLogByDate();
+    } else {
+      $('#logHint').textContent = 'Grouped by each import, most recent first.';
+      $('#logDateRange').style.display = 'none';
+      renderLogByImport();
+    }
+  }
+
+  function renderLogByImport() {
+    var el = $('#logList');
+    if (!logEntries.length) { el.innerHTML = '<div class="empty-state">Nothing yet. Entries you import from cooks show up here.</div>'; return; }
+    var groups = [], byId = {};
+    logEntries.forEach(function (e) {
+      var gid = e.importId || 'legacy';
+      if (!byId[gid]) { byId[gid] = { id: gid, importedAt: e.importedAt, entries: [] }; groups.push(byId[gid]); }
+      byId[gid].entries.push(e);
+    });
+    el.innerHTML = '';
+    groups.slice(0, 40).forEach(function (g) { el.appendChild(renderLogGroup(g)); });
+  }
+
+  function dayMonth(iso) { var p = String(iso).split('-'); return p.length === 3 ? (parseInt(p[2], 10) + '/' + parseInt(p[1], 10)) : iso; }
+
+  function renderLogByDate() {
+    var el = $('#logList');
+    var entries = logEntries.filter(function (e) { return e.type === 'in' || e.type === 'out'; });
+    if (!entries.length) { el.innerHTML = '<div class="empty-state">No cook entries yet to show by date.</div>'; return; }
+    var allDates = entries.map(function (e) { return e.date; }).filter(Boolean);
+    var minD = allDates.reduce(function (a, b) { return a < b ? a : b; });
+    var maxD = allDates.reduce(function (a, b) { return a > b ? a : b; });
+    var fromEl = $('#logFrom'), toEl = $('#logTo');
+    if (!userSetRange) { fromEl.value = minD; toEl.value = maxD; }
+    var from = fromEl.value || minD, to = toEl.value || maxD;
+    var dates = Array.from(new Set(allDates.filter(function (d) { return d >= from && d <= to; }))).sort();
+    if (!dates.length) { el.innerHTML = '<div class="empty-state">No entries in that date range.</div>'; return; }
+    // rows keyed by item + unit + cook (one row per cook, as requested)
+    var rowMap = {}, rowOrder = [];
+    entries.forEach(function (e) {
+      if (e.date < from || e.date > to) return;
+      var key = e.item + '||' + e.unit + '||' + (e.cook || '');
+      if (!rowMap[key]) { rowMap[key] = { item: e.item, unit: e.unit, cook: e.cook || '', cells: {} }; rowOrder.push(key); }
+      var c = rowMap[key].cells[e.date] || (rowMap[key].cells[e.date] = { inQ: 0, outQ: 0 });
+      var q = Number(e.qty) || 0;
+      if (e.type === 'in') c.inQ += q; else c.outQ += q;
+    });
+    rowOrder.sort(function (a, b) { var ra = rowMap[a], rb = rowMap[b]; return ra.item.localeCompare(rb.item) || ra.cook.localeCompare(rb.cook); });
+    // current stock (balance) per item, to show under the Stock head
+    var stockOf = {};
+    inventory.forEach(function (i) { stockOf[i.name.toLowerCase() + '||' + i.unit] = i.currentQty; });
+    var shownStock = {};
+    var head = '<thead><tr class="dates"><th class="rowhead" rowspan="2">Item / Cook</th>' +
+      dates.map(function (d) { return '<th colspan="2">' + dayMonth(d) + '</th>'; }).join('') +
+      '<th class="stockhead" rowspan="2">Stock</th></tr>' +
+      '<tr>' + dates.map(function () { return '<th class="plus">+</th><th class="minus">\u2212</th>'; }).join('') + '</tr></thead>';
+    var body = rowOrder.map(function (key) {
+      var r = rowMap[key];
+      var cells = dates.map(function (d) {
+        var c = r.cells[d];
+        var di = (c && c.inQ) ? disp(c.inQ, r.unit) : null;
+        var doo = (c && c.outQ) ? disp(c.outQ, r.unit) : null;
+        return (di ? '<td class="in">' + fmtNum(di.q) + '</td>' : '<td class="z">\u00b7</td>') +
+               (doo ? '<td class="out">' + fmtNum(doo.q) + '</td>' : '<td class="z">\u00b7</td>');
+      }).join('');
+      var du = displayUnitFor(r.unit);
+      // stock cell: show the item's current stock once (on its first row)
+      var sk = r.item.toLowerCase() + '||' + r.unit, stockCell;
+      if (shownStock[sk]) { stockCell = '<td class="stock"></td>'; }
+      else {
+        shownStock[sk] = true;
+        if (stockOf[sk] == null) stockCell = '<td class="stock z">\u00b7</td>';
+        else { var ds = disp(stockOf[sk], r.unit); stockCell = '<td class="stock">' + fmtNum(ds.q) + '<span class="u">' + ds.u + '</span></td>'; }
+      }
+      return '<tr><td class="rowhead"><span class="it">' + escapeHtml(r.item) + ' <span style="font-weight:400;color:var(--ink-soft);font-size:10.5px;">(' + du + ')</span></span><span class="ck">' + escapeHtml(r.cook || '\u2014') + '</span></td>' + cells + stockCell + '</tr>';
+    }).join('');
+    el.innerHTML = '<div class="pivot-scroll"><table class="pivot">' + head + '<tbody>' + body + '</tbody></table></div>';
+  }
+
+  function renderLogGroup(g) {
+    var wrap = document.createElement('div'); wrap.className = 'imp-group';
+    var isAdjust = g.entries.every(function (e) { return e.type === 'adjust'; });
+    var isLegacy = g.id === 'legacy';
+    var isOwnerEntry = !isAdjust && g.entries[0].cook === 'Owner';
+    var who = isAdjust ? 'Owner correction' : (isOwnerEntry ? 'Owner entry' : (isLegacy ? 'Earlier entries' : ('From ' + escapeHtml(g.entries[0].cook || 'cook'))));
+    var when = g.importedAt ? ('imported ' + fmtDateTime(g.importedAt)) : fmtDate(g.entries[0].date);
+    var head = '<div class="imp-head"><span class="who">' + who + '</span><span style="display:flex;align-items:center;gap:2px;"><span class="when">' + when + '</span>' +
+      '<button class="trash" data-delgrp="' + g.id + '" title="Delete this whole block">\uD83D\uDDD1</button></span></div>';
+    var body;
+    if (isAdjust) {
+      body = '<table class="reg"><thead><tr><th>Item</th><th>Date</th><th>Correction</th><th></th></tr></thead><tbody>' +
+        g.entries.map(function (e) { return '<tr><td class="item">' + escapeHtml(e.item) + '</td><td>' + dayMonth(e.date) + '</td><td>' + escapeHtml(e.note || '') + '</td><td class="del"><button data-deluid="' + e.uid + '" title="Delete this entry">\u2715</button></td></tr>'; }).join('') +
+        '</tbody></table>';
+    } else {
+      body = '<table class="reg"><thead><tr><th>Item</th><th>Date</th><th class="num">+ In</th><th class="num">\u2212 Out</th><th></th></tr></thead><tbody>' +
+        g.entries.map(function (e) {
+          var d = disp(e.qty, e.unit);
+          var inC = e.type === 'in' ? '<span class="in-cell">' + fmtNum(d.q) + '<span class="u">' + d.u + '</span></span>' : '';
+          var outC = e.type === 'out' ? '<span class="out-cell">' + fmtNum(d.q) + '<span class="u">' + d.u + '</span></span>' : '';
+          return '<tr><td class="item">' + escapeHtml(e.item) + '</td><td>' + dayMonth(e.date) + '</td><td class="num">' + inC + '</td><td class="num">' + outC + '</td>' +
+            '<td class="del"><button class="edit" data-eduid="' + e.uid + '" title="Edit this entry">\u270e</button><button data-deluid="' + e.uid + '" title="Delete this entry">\u2715</button></td></tr>';
+        }).join('') +
+        '</tbody></table>';
+    }
+    wrap.innerHTML = head + body;
+    var tb = wrap.querySelector('[data-delgrp]');
+    if (tb) tb.addEventListener('click', function () { deleteGroup(tb.getAttribute('data-delgrp')); });
+    $all('[data-deluid]', wrap).forEach(function (b) { b.addEventListener('click', function () { deleteLogEntry(b.getAttribute('data-deluid')); }); });
+    $all('[data-eduid]', wrap).forEach(function (b) { b.addEventListener('click', function () { editLogEntry(b.getAttribute('data-eduid')); }); });
+    return wrap;
+  }
+
+  function reverseStock(e) {
+    if (e.type !== 'in' && e.type !== 'out') return;
+    var delta = (e.type === 'in' ? -1 : 1) * (Number(e.qty) || 0); // undo: an 'in' comes back off, an 'out' comes back on
+    var it = inventory.find(function (i) { return i.name.toLowerCase() === String(e.item).toLowerCase() && i.unit === e.unit; });
+    if (it) {
+      it.currentQty = Math.round((it.currentQty + delta) * 100) / 100;
+    } else {
+      // item was removed from Stock earlier — recreate it so the reversal is still reflected
+      inventory.push({ id: cryptoId(), name: e.item, unit: e.unit, openingBalance: 0, currentQty: Math.round(delta * 100) / 100, createdAt: new Date().toISOString() });
+      markCatalogDirty();
+    }
+  }
+
+  function applyStock(e) {
+    if (e.type !== 'in' && e.type !== 'out') return;
+    var delta = (e.type === 'in' ? 1 : -1) * (Number(e.qty) || 0);
+    var it = inventory.find(function (i) { return i.name.toLowerCase() === String(e.item).toLowerCase() && i.unit === e.unit; });
+    if (it) { it.currentQty = Math.round((it.currentQty + delta) * 100) / 100; }
+    else { inventory.push({ id: cryptoId(), name: e.item, unit: e.unit, openingBalance: 0, currentQty: Math.round(delta * 100) / 100, createdAt: new Date().toISOString() }); markCatalogDirty(); }
+  }
+
+  function deleteGroup(gid) {
+    var grp = logEntries.filter(function (e) { return (e.importId || 'legacy') === gid; });
+    if (!grp.length) return;
+    var isAdjust = grp.every(function (e) { return e.type === 'adjust'; });
+    var note = isAdjust
+      ? 'This removes ' + grp.length + ' correction' + (grp.length === 1 ? '' : 's') + ' from the register. Your stock numbers stay as they are now.'
+      : 'This removes ' + grp.length + ' entr' + (grp.length === 1 ? 'y' : 'ies') + ' from the register and reverses their effect on your stock.';
+    openModal('Delete this whole block?',
+      '<p style="color:var(--ink-soft);font-size:13.5px;margin:0;">' + note + '</p>',
+      [{ label: 'Cancel', kind: 'secondary' },
+       { label: 'Delete all', kind: 'turmeric', action: function () {
+          if (!isAdjust) grp.forEach(reverseStock);
+          logEntries = logEntries.filter(function (e) { return (e.importId || 'legacy') !== gid; });
+          save('bk_owner_inventory', inventory); save('bk_owner_log', logEntries);
+          renderInventory(); renderLog(); toast('Deleted.');
+        } }]);
+  }
+
+  function deleteLogEntry(uid) {
+    var e = logEntries.find(function (x) { return x.uid === uid; });
+    if (!e) return;
+    var d = disp(e.qty, e.unit);
+    var note = (e.type === 'adjust')
+      ? 'Removes this correction from the register. Stock stays as it is now.'
+      : 'Removes this entry (' + escapeHtml(e.item) + ', ' + (e.type === 'in' ? '+' : '\u2212') + fmtNum(d.q) + ' ' + d.u + ') and reverses its effect on your stock.';
+    openModal('Delete this entry?',
+      '<p style="color:var(--ink-soft);font-size:13.5px;margin:0;">' + note + '</p>',
+      [{ label: 'Cancel', kind: 'secondary' },
+       { label: 'Delete', kind: 'turmeric', action: function () {
+          reverseStock(e);
+          logEntries = logEntries.filter(function (x) { return x.uid !== uid; });
+          save('bk_owner_inventory', inventory); save('bk_owner_log', logEntries);
+          renderInventory(); renderLog(); toast('Entry deleted.');
+        } }]);
+  }
+
+  // ---- Owner: add an entry directly ----
+  $('#ownerAddEntryBtn').addEventListener('click', openAddEntry);
+
+  function oeUnitRefresh() {
+    var v = $('#oeItem').value, isNew = v === '__new';
+    $('#oeNewWrap').style.display = isNew ? 'block' : 'none';
+    var us = $('#oeUnit');
+    if (isNew) { us.innerHTML = ['kg', 'g', 'l', 'ml', 'pcs', 'pkt'].map(function (u) { return '<option value="' + u + '">' + u + '</option>'; }).join(''); }
+    else { var it = inventory.find(function (i) { return i.id === v; }); var base = it ? it.unit : 'kg'; us.innerHTML = unitOptionsFor(base).map(function (u) { return '<option value="' + u + '">' + u + '</option>'; }).join(''); us.value = base; }
+  }
+
+  function openAddEntry() {
+    var itemOpts = sortedInventory().map(function (i) { return '<option value="' + i.id + '">' + escapeHtml(i.name) + ' (' + i.unit + ')</option>'; }).join('');
+    var body =
+      '<label for="oeItem" style="margin-top:0;">Item</label>' +
+      '<select id="oeItem">' + itemOpts + '<option value="__new">+ New item\u2026</option></select>' +
+      '<div id="oeNewWrap" style="display:none;"><label for="oeNewName">New item name</label><input type="text" id="oeNewName" placeholder="Type the item name"></div>' +
+      '<label for="oeUnit">Unit</label><select id="oeUnit"></select>' +
+      '<label for="oeDate">Date</label><input type="date" id="oeDate" value="' + todayISO() + '">' +
+      '<div class="plusminus" style="margin-top:12px;"><div class="col"><label for="oeIn">+ From mandi</label><input type="number" id="oeIn" min="0" step="any" placeholder="0"></div><div class="col out"><label for="oeOut">\u2212 To kitchen</label><input type="number" id="oeOut" min="0" step="any" placeholder="0"></div></div>';
+    openModal('Add an entry', body, [
+      { label: 'Cancel', kind: 'secondary' },
+      { label: 'Add', kind: 'turmeric', keepOpen: true, action: saveOwnerEntry }
+    ]);
+    setTimeout(function () { var s = $('#oeItem'); if (s) { s.addEventListener('change', oeUnitRefresh); oeUnitRefresh(); } }, 50);
+  }
+
+  function saveOwnerEntry() {
+    var v = $('#oeItem').value, name, baseUnit;
+    if (v === '__new') { name = $('#oeNewName').value.trim(); baseUnit = $('#oeUnit').value; if (!name) { toast('Type the item name.'); return; } }
+    else { var it = inventory.find(function (i) { return i.id === v; }); if (!it) { toast('Pick an item.'); return; } name = it.name; baseUnit = it.unit; }
+    var enteredUnit = $('#oeUnit').value;
+    var date = $('#oeDate').value || todayISO();
+    var inQ = parseFloat($('#oeIn').value), outQ = parseFloat($('#oeOut').value);
+    if ((!inQ || inQ <= 0) && (!outQ || outQ <= 0)) { toast('Enter a quantity.'); return; }
+    var importId = 'ownadd-' + cryptoId(), importedAt = new Date().toISOString();
+    function add(type, qty) {
+      var baseQty = (v === '__new') ? qty : convertQty(qty, enteredUnit, baseUnit);
+      var e = { uid: 'l' + cryptoId(), item: name, unit: baseUnit, type: type, qty: baseQty, cook: 'Owner', date: date, importId: importId, importedAt: importedAt };
+      applyStock(e); logEntries.unshift(e);
+    }
+    if (inQ > 0) add('in', inQ);
+    if (outQ > 0) add('out', outQ);
+    save('bk_owner_inventory', inventory); save('bk_owner_log', logEntries);
+    closeModal(); renderInventory(); renderLog(); toast('Entry added.');
+  }
+
+  // ---- Owner: edit an existing entry ----
+  function editLogEntry(uid) {
+    var e = logEntries.find(function (x) { return x.uid === uid; });
+    if (!e) return;
+    if (e.type === 'adjust') { toast('Corrections can\u2019t be edited \u2014 delete and re-correct instead.'); return; }
+    var du = displayUnitFor(e.unit), dq = convertQty(e.qty, e.unit, du);
+    var body =
+      '<p style="color:var(--ink-soft);font-size:12.5px;margin:0 0 12px;">' + escapeHtml(e.item) + '</p>' +
+      '<label style="margin-top:0;">Type</label><select id="edType"><option value="in"' + (e.type === 'in' ? ' selected' : '') + '>+ From mandi</option><option value="out"' + (e.type === 'out' ? ' selected' : '') + '>\u2212 To kitchen</option></select>' +
+      '<label for="edQty">Quantity (' + du + ')</label><input type="number" id="edQty" step="any" value="' + dq + '">' +
+      '<label for="edDate">Date</label><input type="date" id="edDate" value="' + e.date + '">';
+    openModal('Edit entry', body, [
+      { label: 'Cancel', kind: 'secondary' },
+      { label: 'Save', kind: 'turmeric', keepOpen: true, action: function () {
+          var newType = $('#edType').value, newQtyDisp = parseFloat($('#edQty').value), newDate = $('#edDate').value || e.date;
+          if (isNaN(newQtyDisp) || newQtyDisp < 0) { toast('Enter a valid quantity.'); return; }
+          var newQtyBase = convertQty(newQtyDisp, du, e.unit);
+          reverseStock({ type: e.type, qty: e.qty, item: e.item, unit: e.unit }); // undo old
+          e.type = newType; e.qty = newQtyBase; e.date = newDate;
+          applyStock(e); // apply new
+          save('bk_owner_inventory', inventory); save('bk_owner_log', logEntries);
+          closeModal(); renderInventory(); renderLog(); toast('Entry updated.');
+        } }
+    ]);
+  }
+
+  // owner: share catalog to cooks
+  $('#shareCatalogBtn').addEventListener('click', function () {
+    if (!inventory.length) { toast('Add some items first.'); return; }
+    var items = inventory.slice().sort(function (a, b) { return String(a.name).localeCompare(String(b.name), undefined, { sensitivity: 'base' }); })
+      .map(function (i) { return { name: i.name, unit: i.unit }; });
+    var payload = encodePayload({ t: 'catalog', items: items });
+    shareCode('Item list for your cooks', 'Cooks paste this into \u201cLoad item list from owner.\u201d It replaces their old list, in A\u2013Z order.', payload);
+    catalogDirty = false; save('bk_owner_catalog_dirty', false); updateShareBtn();
+  });
+
+  // owner: import cook batch
+  $('#importReadBtn').addEventListener('click', function () {
+    var data = decodePayload($('#importCodeBox').value);
+    if (data && data.t === 'batch' && Array.isArray(data.entries)) { reviewBatch(data); return; }
+    if (data && data.t === 'mealbatch' && Array.isArray(data.entries)) { importMealBatch(data); return; }
+    toast('That doesn\u2019t look like a cook\u2019s code.');
+  });
+
+  function reviewBatch(data) {
+    var rows = data.entries.map(function (e, idx) {
+      var known = inventory.some(function (i) { return i.name.toLowerCase() === String(e.item).toLowerCase() && i.unit === e.unit; });
+      return '<div class="pending-row"><span class="tag ' + (e.type === 'in' ? 'in' : 'out') + '">' + (e.type === 'in' ? '+ MANDI' : '\u2212 KITCHEN') + '</span>' +
+        '<span class="desc">' + escapeHtml(e.item) + (known ? '' : ' <span style="color:var(--out-rust);">(new item)</span>') +
+        '<span class="date">' + fmtDate(e.date) + ' \u00b7 ' + fmtNum(e.qty) + ' ' + escapeHtml(e.unit) + '</span></span>' +
+        '<input type="checkbox" class="imp-chk" data-idx="' + idx + '" checked style="width:20px;height:20px;"></div>';
+    }).join('');
+    openModal('From ' + escapeHtml(data.cook || 'cook') + ' \u2014 ' + data.entries.length + ' entr' + (data.entries.length === 1 ? 'y' : 'ies'),
+      '<p style="color:var(--ink-soft);font-size:12.5px;margin:0 0 12px;">Untick anything you don\u2019t want. New items get added to your stock.</p>' + rows,
+      [{ label: 'Cancel', kind: 'secondary' },
+       { label: 'Approve ticked', kind: 'turmeric', action: function () {
+          var chosen = $all('.imp-chk').filter(function (c) { return c.checked; }).map(function (c) { return data.entries[parseInt(c.getAttribute('data-idx'), 10)]; });
+          applyBatch(chosen, data.cook || 'Cook');
+        } }]);
+  }
+
+  function applyBatch(entries, who) {
+    var added = 0;
+    var importId = 'imp-' + cryptoId();
+    var importedAt = new Date().toISOString();
+    entries.forEach(function (e) {
+      var item = inventory.find(function (i) { return i.name.toLowerCase() === String(e.item).toLowerCase() && i.unit === e.unit; });
+      if (!item) {
+        item = { id: cryptoId(), name: e.item, unit: e.unit, openingBalance: 0, currentQty: 0, createdAt: new Date().toISOString() };
+        inventory.push(item); added++;
+      }
+      var q = Number(e.qty) || 0;
+      item.currentQty = Math.round((item.currentQty + (e.type === 'in' ? q : -q)) * 100) / 100;
+      logEntries.unshift({ uid: 'l' + cryptoId(), item: item.name, unit: item.unit, type: e.type, qty: q, cook: who, date: e.date || todayISO(), importId: importId, importedAt: importedAt });
+    });
+    if (added) markCatalogDirty();
+    save('bk_owner_inventory', inventory); save('bk_owner_log', logEntries);
+    renderInventory(); renderLog();
+    $('#importCodeBox').value = '';
+    toast(entries.length + ' applied' + (added ? ', ' + added + ' new item' + (added === 1 ? '' : 's') : '') + '.');
+    switchView('view-stock');
+  }
+
+  // owner: stock check
+  $('#newCheckBtn').addEventListener('click', function () {
+    if (!inventory.length) { toast('Add inventory items first.'); return; }
+    var fields = sortedInventory().map(function (item) {
+      var db = disp(item.currentQty, item.unit);
+      return '<div style="margin-bottom:10px;"><label style="margin:0 0 4px;">' + escapeHtml(item.name) + ' <span style="font-weight:400;color:var(--ink-soft);">(book: ' + fmtNum(db.q) + ' ' + db.u + ')</span></label>' +
+        '<input type="number" step="any" class="check-actual" data-id="' + item.id + '" placeholder="actual ' + db.u + '"></div>';
+    }).join('');
+    openModal('New stock check',
+      '<label for="checkName" style="margin-top:0;">Name this check</label><input type="text" id="checkName" placeholder="Weekly count \u2014 ' + fmtDate(todayISO()) + '"><div style="margin-top:16px;">' + fields + '</div>',
+      [{ label: 'Cancel', kind: 'secondary' },
+       { label: 'Save check', kind: 'turmeric', action: function () {
+          var name = $('#checkName').value.trim() || ('Stock check \u2014 ' + fmtDate(todayISO()));
+          var entries = [];
+          $all('.check-actual').forEach(function (inp) {
+            if (inp.value === '') return;
+            var item = inventory.find(function (i) { return i.id === inp.getAttribute('data-id'); }); if (!item) return;
+            var actual = convertQty(parseFloat(inp.value), displayUnitFor(item.unit), item.unit); // typed in display unit → store base
+            entries.push({ item: item.name, unit: item.unit, bookQty: item.currentQty, actualQty: actual, variance: Math.round((actual - item.currentQty) * 100) / 100 });
+          });
+          if (!entries.length) { toast('Enter at least one actual quantity.'); return; }
+          checks.unshift({ id: cryptoId(), name: name, date: todayISO(), entries: entries, createdAt: new Date().toISOString() });
+          save('bk_owner_checks', checks); renderChecks(); toast('Stock check saved.');
+        } }]);
+  });
+
+  function renderChecks() {
+    var el = $('#checkList');
+    if (!checks.length) { el.innerHTML = '<div class="empty-state">No stock checks yet.</div>'; return; }
+    el.innerHTML = '';
+    checks.forEach(function (c) {
+      var card = document.createElement('div'); card.className = 'card'; card.style.cursor = 'pointer';
+      var mism = c.entries.filter(function (e) { return e.variance !== 0; }).length;
+      card.innerHTML = '<div style="display:flex;justify-content:space-between;align-items:baseline;"><strong style="font-family:var(--font-display);font-size:15.5px;">' + escapeHtml(c.name) + '</strong><span style="font-size:12px;color:var(--ink-soft);">' + fmtDate(c.date) + '</span></div>' +
+        '<div style="font-size:12.5px;color:var(--ink-soft);margin-top:4px;">' + c.entries.length + ' item' + (c.entries.length === 1 ? '' : 's') + ' \u00b7 ' + (mism ? mism + ' mismatch' + (mism === 1 ? '' : 'es') : 'all matched') + '</div>';
+      card.addEventListener('click', function () { showCheckDetail(c); });
+      el.appendChild(card);
+    });
+  }
+  function showCheckDetail(c) {
+    var body = '<table class="reg"><thead><tr><th>Item</th><th class="num">Book</th><th class="num">Actual</th><th class="num">Diff</th></tr></thead><tbody>' +
+      c.entries.map(function (e) {
+        var vc = e.variance > 0 ? 'variance-pos' : (e.variance < 0 ? 'variance-neg' : 'variance-zero'), sign = e.variance > 0 ? '+' : '';
+        var db = disp(e.bookQty, e.unit), da = disp(e.actualQty, e.unit), dv = disp(e.variance, e.unit);
+        return '<tr><td class="item">' + escapeHtml(e.item) + '</td>' +
+          '<td class="num">' + fmtNum(db.q) + '<span class="u">' + db.u + '</span></td>' +
+          '<td class="num">' + fmtNum(da.q) + '<span class="u">' + da.u + '</span></td>' +
+          '<td class="num ' + vc + '">' + sign + fmtNum(dv.q) + '</td></tr>';
+      }).join('') + '</tbody></table>';
+    openModal(c.name, body, [{ label: 'Close', kind: 'turmeric' }]);
+  }
+
+  function catalogAZ() { return catalog.slice().sort(function (a, b) { return String(a.name).localeCompare(String(b.name), undefined, { sensitivity: 'base' }); }); }
+
+  // ================= COOK =================
+  function renderCookCatalog() {
+    var el = $('#cookInventoryList');
+    if (!catalog.length) { el.innerHTML = '<div class="empty-state">No item list yet. Ask the owner to send you one, then tap \u201cLoad item list from owner.\u201d You can still log new items by hand.</div>'; return; }
+    el.innerHTML = '';
+    catalogAZ().forEach(function (item) {
+      var row = document.createElement('div'); row.className = 'ledger-row';
+      row.innerHTML = '<div class="item-name">' + escapeHtml(item.name) + '</div><div class="qty" style="font-size:13px;color:var(--ink-soft);">' + item.unit + '</div>';
+      el.appendChild(row);
+    });
+  }
+
+  $('#loadCatalogBtn').addEventListener('click', function () {
+    openModal('Load item list', '<p style="color:var(--ink-soft);font-size:12.5px;margin:0 0 12px;">This replaces your current item list with the owner\u2019s latest. Your logged entries aren\u2019t affected.</p><label for="catBox" style="margin-top:0;">Paste the code the owner sent</label><textarea id="catBox" rows="5" placeholder="BHNDR code from owner…"></textarea>',
+      [{ label: 'Cancel', kind: 'secondary' },
+       { label: 'Load', kind: 'turmeric', action: function () {
+          var data = decodePayload($('#catBox').value);
+          if (!data || data.t !== 'catalog' || !Array.isArray(data.items)) { toast('That doesn\u2019t look like an item list.'); return; }
+          catalog = data.items; save('bk_cook_items', catalog);
+          renderCookCatalog(); renderEntryOptions(); toast('Item list replaced with the owner\u2019s latest.');
+        } }]);
+  });
+
+  function renderEntryOptions() {
+    var sel = $('#entryItem'); var prev = sel.value;
+    var indexed = catalog.map(function (i, idx) { return { i: i, idx: idx }; });
+    indexed.sort(function (a, b) { return String(a.i.name).localeCompare(String(b.i.name), undefined, { sensitivity: 'base' }); });
+    var opts = indexed.map(function (o) { return '<option value="' + o.idx + '">' + escapeHtml(o.i.name) + ' (' + o.i.unit + ')</option>'; }).join('');
+    sel.innerHTML = opts + '<option value="__new">+ New item…</option>';
+    if (prev && (prev === '__new' || catalog[prev])) sel.value = prev;
+    onItemChange();
+  }
+  function currentBaseUnit() {
+    if ($('#entryItem').value === '__new') return $('#entryUnit').getAttribute('data-new') || 'kg';
+    var item = catalog[$('#entryItem').value];
+    return item ? item.unit : 'kg';
+  }
+  function onItemChange() {
+    var isNew = $('#entryItem').value === '__new';
+    $('#newItemInlineWrap').style.display = isNew ? 'block' : 'none';
+    // base unit: for a catalog item it's fixed; for a new item let them pick the base too
+    var base = isNew ? ($('#entryUnit').getAttribute('data-new') || 'kg') : (catalog[$('#entryItem').value] ? catalog[$('#entryItem').value].unit : 'kg');
+    var us = $('#entryUnit');
+    if (isNew) {
+      // new item: unit dropdown IS the base unit chooser (full list)
+      us.removeAttribute('data-new');
+      us.innerHTML = ['kg', 'g', 'l', 'ml', 'pcs', 'pkt'].map(function (u) { return '<option value="' + u + '">' + u + '</option>'; }).join('');
+      us.value = base;
+    } else {
+      // existing item: offer the item's unit and its sibling (kg/g or l/ml)
+      var opts = unitOptionsFor(base);
+      us.innerHTML = opts.map(function (u) { return '<option value="' + u + '">' + u + '</option>'; }).join('');
+      us.value = base;
+    }
+  }
+  $('#entryItem').addEventListener('change', onItemChange);
+
+  $('#addEntryBtn').addEventListener('click', function () {
+    var name, baseUnit;
+    if ($('#entryItem').value === '__new') {
+      name = $('#entryNewItem').value.trim();
+      baseUnit = $('#entryUnit').value; // for a new item the chosen unit is its base
+      if (!name) { toast('Type the new item\u2019s name.'); return; }
+    } else {
+      var item = catalog[$('#entryItem').value];
+      if (!item) { toast('Pick an item or add a new one.'); return; }
+      name = item.name; baseUnit = item.unit;
+    }
+    var enteredUnit = $('#entryUnit').value;               // what the cook typed in (kg or g)
+    var date = $('#entryDate').value || todayISO();
+    var inQ = parseFloat($('#entryIn').value), outQ = parseFloat($('#entryOut').value);
+    if ((!inQ || inQ <= 0) && (!outQ || outQ <= 0)) { toast('Enter a quantity in one box.'); return; }
+    function pushEntry(type, qty) {
+      var baseQty = ($('#entryItem').value === '__new') ? qty : convertQty(qty, enteredUnit, baseUnit);
+      pending.push({ localId: cryptoId(), item: name, unit: baseUnit, type: type, qty: baseQty,
+                     inputQty: qty, inputUnit: enteredUnit, date: date });
+    }
+    if (inQ > 0) pushEntry('in', inQ);
+    if (outQ > 0) pushEntry('out', outQ);
+    save('bk_cook_pending', pending);
+    $('#entryIn').value = ''; $('#entryOut').value = ''; $('#entryNewItem').value = '';
+    toast('Added.'); renderPending(); renderEntryRecent();
+  });
+
+  // live list at the bottom of the Add-entry screen (bullet: each entry shown at bottom)
+  function renderEntryRecent() {
+    var el = $('#entryRecent'), title = $('#entryRecentTitle');
+    if (!el) return;
+    if (!pending.length) { el.innerHTML = ''; title.style.display = 'none'; return; }
+    title.style.display = 'block';
+    title.textContent = 'Added so far (' + pending.length + ')';
+    el.innerHTML = '';
+    pending.slice().reverse().forEach(function (p) {
+      var row = document.createElement('div'); row.className = 'pending-row';
+      row.innerHTML = '<span class="tag ' + p.type + '">' + (p.type === 'in' ? '+ MANDI' : '\u2212 KITCHEN') + '</span>' +
+        '<span class="desc">' + escapeHtml(p.item) + '<span class="date">' + fmtDate(p.date) + ' \u00b7 ' + entryQtyLabel(p) + '</span></span>' +
+        '<button class="icon-btn danger" data-remove="' + p.localId + '">\u2715</button>';
+      el.appendChild(row);
+    });
+    $all('[data-remove]', el).forEach(function (b) { b.addEventListener('click', function () { removePending(b.getAttribute('data-remove')); }); });
+  }
+
+  function entryQtyLabel(p) {
+    // show what the cook typed; note the base unit too when they differ
+    if (p.inputUnit && p.inputUnit !== p.unit) return fmtNum(p.inputQty) + ' ' + p.inputUnit + ' (= ' + fmtNum(p.qty) + ' ' + p.unit + ')';
+    return fmtNum(p.qty) + ' ' + p.unit;
+  }
+
+  function removePending(id) {
+    pending = pending.filter(function (p) { return p.localId !== id; });
+    save('bk_cook_pending', pending); renderPending(); renderEntryRecent();
+  }
+
+  function renderPending() {
+    var el = $('#pendingList'), hint = $('#pendingHint'), btn = $('#sendBtn');
+    if (!pending.length) {
+      var resend = (lastSent && lastSent.entries && lastSent.entries.length)
+        ? '<div class="empty-state">Nothing waiting \u2014 all sent.<br><br><button class="btn secondary small" id="resendBtn">Resend last batch (' + lastSent.entries.length + ')</button><br><span style="font-size:11.5px;">Use this only if the owner didn\u2019t get the last code.</span></div>'
+        : '<div class="empty-state">Nothing waiting. Log entries from \u201cAdd entry.\u201d</div>';
+      el.innerHTML = resend;
+      btn.style.display = 'none';
+      hint.textContent = 'Entries are sent to the owner and cleared from your phone.';
+      var rb = $('#resendBtn'); if (rb) rb.addEventListener('click', function () { openShareFor(lastSent.entries, true); });
+      return;
+    }
+    hint.textContent = pending.length + ' ' + (pending.length === 1 ? 'entry' : 'entries') + ' ready.';
+    el.innerHTML = '';
+    pending.forEach(function (p) {
+      var row = document.createElement('div'); row.className = 'pending-row';
+      row.innerHTML = '<span class="tag ' + p.type + '">' + (p.type === 'in' ? '+ MANDI' : '\u2212 KITCHEN') + '</span>' +
+        '<span class="desc">' + escapeHtml(p.item) + '<span class="date">' + fmtDate(p.date) + ' \u00b7 ' + entryQtyLabel(p) + '</span></span>' +
+        '<button class="icon-btn danger" data-remove="' + p.localId + '">\u2715</button>';
+      el.appendChild(row);
+    });
+    $all('[data-remove]', el).forEach(function (b) { b.addEventListener('click', function () { removePending(b.getAttribute('data-remove')); }); });
+    btn.style.display = 'block';
+  }
+
+  function openShareFor(entries, isResend) {
+    var payload = encodePayload({ t: 'batch', cook: cookName, entries: entries.map(function (p) { return { item: p.item, unit: p.unit, type: p.type, qty: p.qty, date: p.date }; }) });
+    shareCode((isResend ? 'Resend ' : 'Send ') + entries.length + ' entr' + (entries.length === 1 ? 'y' : 'ies') + ' to owner',
+      isResend ? 'Same batch as before \u2014 send it again.' : 'Copy or WhatsApp this to the owner. It\u2019s cleared from your phone now; if the owner didn\u2019t get it, use \u201cResend last batch\u201d.',
+      payload);
+  }
+
+  // Send: clears the cook's list immediately (bullet: entries deleted on cook side once sent),
+  // but keeps the batch as "last sent" so it can be resent if the owner missed it.
+  $('#sendBtn').addEventListener('click', function () {
+    if (!pending.length) return;
+    var batch = pending.slice();
+    lastSent = { entries: batch, sentAt: new Date().toISOString() };
+    save('bk_cook_lastsent', lastSent);
+    pending = []; save('bk_cook_pending', pending);
+    renderPending(); renderEntryRecent();
+    openShareFor(batch, false);
+  });
+
+  // ---------- shared "share this code" sheet ----------
+  function shareCode(title, note, payload) {
+    var waMsg = encodeURIComponent('Bhandar entries \u2014 paste this into your Bhandar app:\n\n' + payload);
+    var actions = [
+      { label: 'Copy code', kind: 'turmeric', keepOpen: true, action: function () { copyText(payload); } },
+      { label: 'WhatsApp', kind: 'secondary', keepOpen: true, action: function () { window.open('https://wa.me/?text=' + waMsg, '_blank'); } },
+      { label: 'Done', kind: 'secondary' }
+    ];
+    openModal(title,
+      '<p style="color:var(--ink-soft);font-size:12.5px;margin:0 0 10px;">' + note + '</p>' +
+      '<textarea id="shareBox" rows="5" readonly>' + escapeHtml(payload) + '</textarea>',
+      actions);
+    setTimeout(function () { var f = $('#shareBox'); if (f) { f.focus(); f.select(); } }, 60);
+  }
+  function copyText(txt) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(txt).then(function () { toast('Copied.'); }, function () { fallbackCopy(txt); });
+    } else fallbackCopy(txt);
+  }
+  function fallbackCopy(txt) {
+    var f = $('#shareBox'); if (f) { f.focus(); f.select(); try { document.execCommand('copy'); toast('Copied.'); } catch (e) { toast('Select the code and copy it.'); } }
+  }
+
+  // ---------- boot ----------
+  // ================= MEALS MODULE =================
+  var MEAL_TYPES = ['breakfast', 'lunch', 'dinner'];
+  var MEAL_LABEL = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner' };
+  var dishes = load('bk_owner_dishes', []);          // owner: [{id,name}]
+  var meals = load('bk_owner_meals', {});            // owner: { date: {breakfast:[],lunch:[],dinner:[]} }
+  var cookDishes = load('bk_cook_dishes', []);       // cook: [{name}]
+  var mealPending = load('bk_cook_mealpending', []); // cook: [{localId,date,meal,dishes:[]}]
+  var mealLastSent = load('bk_cook_meallastsent', null);
+  var mealPickerExtras = [];
+
+  function dishesAZ(list) { return list.slice().sort(function (a, b) { return String(a.name).localeCompare(String(b.name), undefined, { sensitivity: 'base' }); }); }
+
+  // ---- Owner: manage the prepared-dish list ----
+  function manageDishes() {
+    var listHtml = dishes.length
+      ? dishesAZ(dishes).map(function (d) { return '<div class="pending-row"><span class="desc">' + escapeHtml(d.name) + '</span><button class="icon-btn danger" data-deldish="' + d.id + '">\u2715</button></div>'; }).join('')
+      : '<div class="empty-state" style="padding:14px;">No dishes yet.</div>';
+    openModal('Prepared dishes',
+      '<label style="margin-top:0;" for="newDishName">Add a dish</label><input type="text" id="newDishName" placeholder="e.g. Aloo Parantha">' +
+      '<button class="btn turmeric block small" id="addDishBtn" style="margin-top:10px;">Add dish</button>' +
+      '<div style="margin-top:14px;max-height:42vh;overflow-y:auto;">' + listHtml + '</div>',
+      [{ label: 'Done', kind: 'secondary' }]);
+    setTimeout(function () {
+      var add = $('#addDishBtn'); if (add) add.addEventListener('click', function () {
+        var n = $('#newDishName').value.trim(); if (!n) { toast('Type a dish name.'); return; }
+        dishes.push({ id: cryptoId(), name: n }); save('bk_owner_dishes', dishes); toast('Dish added.'); manageDishes();
+      });
+      $all('[data-deldish]').forEach(function (b) { b.addEventListener('click', function () {
+        dishes = dishes.filter(function (d) { return d.id !== b.getAttribute('data-deldish'); }); save('bk_owner_dishes', dishes); manageDishes();
+      }); });
+      var f = $('#newDishName'); if (f) f.focus();
+    }, 50);
+  }
+  $('#manageDishesBtn').addEventListener('click', manageDishes);
+
+  $('#sendDishesBtn').addEventListener('click', function () {
+    if (!dishes.length) { toast('Add some dishes first.'); return; }
+    var payload = encodePayload({ t: 'dishlist', dishes: dishesAZ(dishes).map(function (d) { return { name: d.name }; }) });
+    shareCode('Dish list for your cooks', 'Cooks paste this into \u201cLoad dish list from owner.\u201d', payload);
+  });
+
+  // ---- Owner: meals table (Date x Breakfast/Lunch/Dinner) ----
+  function mealDates() { return Object.keys(meals).sort().reverse(); } // newest first
+
+  function renderMealTable() {
+    var el = $('#mealTable'); if (!el) return;
+    var dates = mealDates();
+    if (!dates.length) { el.innerHTML = '<div class="empty-state">No meals logged yet. Tap \u201c+ Add a meal\u201d, or import what a cook sent.</div>'; return; }
+    var head = '<thead><tr><th class="rowhead">Date</th>' + MEAL_TYPES.map(function (m) { return '<th>' + MEAL_LABEL[m] + '</th>'; }).join('') + '</tr></thead>';
+    var body = dates.map(function (d) {
+      var cells = MEAL_TYPES.map(function (m) {
+        var arr = (meals[d] && meals[d][m]) ? meals[d][m] : [];
+        var txt = arr.length ? arr.map(escapeHtml).join(', ') : '<span class="z">\u2014</span>';
+        return '<td class="mealcell" data-date="' + d + '" data-meal="' + m + '">' + txt + '</td>';
+      }).join('');
+      return '<tr><td class="rowhead">' + dayMonth(d) + '</td>' + cells + '</tr>';
+    }).join('');
+    el.innerHTML = '<div class="pivot-scroll"><table class="pivot meals">' + head + '<tbody>' + body + '</tbody></table></div>';
+    $all('.mealcell', el).forEach(function (c) { c.addEventListener('click', function () { editMealCell(c.getAttribute('data-date'), c.getAttribute('data-meal')); }); });
+  }
+
+  function saveMealCell(date, meal, selected) {
+    if (!meals[date]) meals[date] = {};
+    meals[date][meal] = selected;
+    if (MEAL_TYPES.every(function (m) { return !meals[date][m] || !meals[date][m].length; })) delete meals[date];
+    save('bk_owner_meals', meals); renderMealTable();
+  }
+
+  function editMealCell(date, meal) {
+    var current = (meals[date] && meals[date][meal]) ? meals[date][meal].slice() : [];
+    openMealPicker('Edit ' + MEAL_LABEL[meal] + ' \u2014 ' + dayMonth(date), current, function (sel) { saveMealCell(date, meal, sel); toast('Updated.'); });
+  }
+
+  // dish picker: checkboxes from the list + free-typed dishes (owner may add items not in the list)
+  function openMealPicker(title, preselected, onSave) {
+    var checks = dishesAZ(dishes).map(function (d) {
+      var on = preselected.indexOf(d.name) !== -1 ? ' checked' : '';
+      return '<label style="display:flex;align-items:center;gap:8px;font-weight:400;color:var(--ink);margin:6px 0;"><input type="checkbox" class="dishchk" value="' + escapeHtml(d.name) + '"' + on + ' style="width:18px;height:18px;">' + escapeHtml(d.name) + '</label>';
+    }).join('');
+    mealPickerExtras = preselected.filter(function (n) { return !dishes.some(function (d) { return d.name === n; }); });
+    openModal(title,
+      (checks || '<p style="color:var(--ink-soft);font-size:12.5px;">No dishes in your list yet \u2014 type below.</p>') +
+      '<label for="freeDish" style="font-size:12px;">Add a dish not in the list</label>' +
+      '<div style="display:flex;gap:8px;"><input type="text" id="freeDish" placeholder="Type a dish"><button class="btn secondary small" id="freeDishAdd" type="button">Add</button></div>' +
+      '<div id="freeDishTags" style="margin-top:8px;"></div>',
+      [{ label: 'Cancel', kind: 'secondary' }, { label: 'Save', kind: 'turmeric', keepOpen: true, action: function () {
+          var sel = $all('.dishchk').filter(function (c) { return c.checked; }).map(function (c) { return c.value; }).concat(mealPickerExtras);
+          closeModal(); onSave(sel);
+        } }]);
+    setTimeout(function () {
+      renderFreeTags();
+      var addBtn = $('#freeDishAdd'); if (addBtn) addBtn.addEventListener('click', function () {
+        var v = $('#freeDish').value.trim(); if (!v) return;
+        if (mealPickerExtras.indexOf(v) === -1) mealPickerExtras.push(v);
+        $('#freeDish').value = ''; renderFreeTags();
+      });
+    }, 50);
+  }
+  function renderFreeTags() {
+    var el = $('#freeDishTags'); if (!el) return;
+    el.innerHTML = mealPickerExtras.map(function (n, i) { return '<span class="tag in" style="display:inline-flex;align-items:center;gap:4px;margin:2px;">' + escapeHtml(n) + ' <button type="button" data-rmextra="' + i + '" style="border:none;background:none;color:inherit;cursor:pointer;">\u2715</button></span>'; }).join('');
+    $all('[data-rmextra]', el).forEach(function (b) { b.addEventListener('click', function () { mealPickerExtras.splice(parseInt(b.getAttribute('data-rmextra'), 10), 1); renderFreeTags(); }); });
+  }
+
+  $('#addMealBtn').addEventListener('click', function () {
+    openModal('Add a meal',
+      '<label for="amDate" style="margin-top:0;">Date</label><input type="date" id="amDate" value="' + todayISO() + '">' +
+      '<label for="amMeal">Meal</label><select id="amMeal">' + MEAL_TYPES.map(function (m) { return '<option value="' + m + '">' + MEAL_LABEL[m] + '</option>'; }).join('') + '</select>',
+      [{ label: 'Cancel', kind: 'secondary' }, { label: 'Next', kind: 'turmeric', keepOpen: true, action: function () {
+          var date = $('#amDate').value || todayISO(), meal = $('#amMeal').value;
+          closeModal();
+          var current = (meals[date] && meals[date][meal]) ? meals[date][meal].slice() : [];
+          openMealPicker(MEAL_LABEL[meal] + ' \u2014 ' + dayMonth(date), current, function (sel) { saveMealCell(date, meal, sel); toast('Meal added.'); });
+        } }]);
+  });
+
+  // ---- Owner: import a meal batch from a cook ----
+  function importMealBatch(data) {
+    var rows = data.entries.map(function (e, idx) {
+      return '<div class="pending-row"><span class="tag in">' + MEAL_LABEL[e.meal] + '</span><span class="desc">' + dayMonth(e.date) + '<span class="date">' + (e.dishes || []).map(escapeHtml).join(', ') + '</span></span><input type="checkbox" class="mealimp" data-idx="' + idx + '" checked style="width:20px;height:20px;"></div>';
+    }).join('');
+    openModal('Meals from ' + escapeHtml(data.cook || 'cook'),
+      '<p style="color:var(--ink-soft);font-size:12.5px;margin:0 0 10px;">Added to the meals register \u2014 you can edit any cell afterwards.</p>' + rows,
+      [{ label: 'Cancel', kind: 'secondary' }, { label: 'Add ticked', kind: 'turmeric', action: function () {
+          var chosen = $all('.mealimp').filter(function (c) { return c.checked; }).map(function (c) { return data.entries[parseInt(c.getAttribute('data-idx'), 10)]; });
+          chosen.forEach(function (e) {
+            if (!meals[e.date]) meals[e.date] = {};
+            var cur = meals[e.date][e.meal] || [];
+            (e.dishes || []).forEach(function (n) { if (cur.indexOf(n) === -1) cur.push(n); });
+            meals[e.date][e.meal] = cur;
+          });
+          save('bk_owner_meals', meals);
+          $('#importCodeBox').value = '';
+          renderMealTable(); toast(chosen.length + ' meal entr' + (chosen.length === 1 ? 'y' : 'ies') + ' added.');
+          switchView('view-meals');
+        } }]);
+  }
+
+  // ---- Cook: load dishes + log meals ----
+  $('#loadDishesBtn').addEventListener('click', function () {
+    openModal('Load dish list', '<label for="dishBox" style="margin-top:0;">Paste the dish-list code the owner sent</label><textarea id="dishBox" rows="5" placeholder="BHNDR code from owner…"></textarea>',
+      [{ label: 'Cancel', kind: 'secondary' }, { label: 'Load', kind: 'turmeric', action: function () {
+          var data = decodePayload($('#dishBox').value);
+          if (!data || data.t !== 'dishlist' || !Array.isArray(data.dishes)) { toast('That doesn\u2019t look like a dish list.'); return; }
+          cookDishes = data.dishes; save('bk_cook_dishes', cookDishes);
+          renderCookMealDishes(); toast('Dish list updated.');
+        } }]);
+  });
+
+  function renderCookMealDishes() {
+    var el = $('#mealDishChecks'); if (!el) return;
+    if (!cookDishes.length) { el.innerHTML = '<div class="empty-state" style="padding:12px;">No dishes yet. Tap \u201cLoad dish list from owner\u201d above.</div>'; return; }
+    el.innerHTML = dishesAZ(cookDishes).map(function (d) {
+      return '<label style="display:flex;align-items:center;gap:8px;font-weight:400;color:var(--ink);margin:6px 0;"><input type="checkbox" class="cmdish" value="' + escapeHtml(d.name) + '" style="width:18px;height:18px;">' + escapeHtml(d.name) + '</label>';
+    }).join('');
+  }
+
+  $('#addMealPendingBtn').addEventListener('click', function () {
+    var date = $('#mealDate').value || todayISO(), meal = $('#mealType').value;
+    var chosen = $all('.cmdish').filter(function (c) { return c.checked; }).map(function (c) { return c.value; });
+    if (!chosen.length) { toast('Select at least one dish.'); return; }
+    mealPending.push({ localId: cryptoId(), date: date, meal: meal, dishes: chosen });
+    save('bk_cook_mealpending', mealPending);
+    $all('.cmdish').forEach(function (c) { c.checked = false; });
+    toast('Added.'); renderMealPending();
+  });
+
+  function renderMealPending() {
+    var el = $('#mealPendingList'), btn = $('#sendMealsBtn'); if (!el) return;
+    if (!mealPending.length) {
+      el.innerHTML = (mealLastSent && mealLastSent.entries && mealLastSent.entries.length)
+        ? '<div class="empty-state">All sent.<br><br><button class="btn secondary small" id="resendMealsBtn">Resend last (' + mealLastSent.entries.length + ')</button></div>'
+        : '<div class="empty-state">Nothing added yet.</div>';
+      btn.style.display = 'none';
+      var rb = $('#resendMealsBtn'); if (rb) rb.addEventListener('click', function () { openMealShare(mealLastSent.entries, true); });
+      return;
+    }
+    el.innerHTML = mealPending.map(function (p) {
+      return '<div class="pending-row"><span class="tag in">' + MEAL_LABEL[p.meal] + '</span><span class="desc">' + dayMonth(p.date) + '<span class="date">' + p.dishes.map(escapeHtml).join(', ') + '</span></span><button class="icon-btn danger" data-rmmeal="' + p.localId + '">\u2715</button></div>';
+    }).join('');
+    $all('[data-rmmeal]', el).forEach(function (b) { b.addEventListener('click', function () { mealPending = mealPending.filter(function (p) { return p.localId !== b.getAttribute('data-rmmeal'); }); save('bk_cook_mealpending', mealPending); renderMealPending(); }); });
+    btn.style.display = 'block';
+  }
+
+  function openMealShare(entries, isResend) {
+    var payload = encodePayload({ t: 'mealbatch', cook: cookName, entries: entries.map(function (p) { return { date: p.date, meal: p.meal, dishes: p.dishes }; }) });
+    shareCode((isResend ? 'Resend ' : 'Send ') + entries.length + ' meal entr' + (entries.length === 1 ? 'y' : 'ies'),
+      isResend ? 'Same as before.' : 'Copy or WhatsApp to the owner. Cleared from your phone now; use \u201cResend\u201d if the owner didn\u2019t get it.', payload);
+  }
+
+  $('#sendMealsBtn').addEventListener('click', function () {
+    if (!mealPending.length) return;
+    var batch = mealPending.slice();
+    mealLastSent = { entries: batch, sentAt: new Date().toISOString() };
+    save('bk_cook_meallastsent', mealLastSent);
+    mealPending = []; save('bk_cook_mealpending', mealPending);
+    renderMealPending();
+    openMealShare(batch, false);
+  });
+
+  // ================= BACKUP / RESTORE (owner) =================
+  function buildBackup() {
+    return { app: 'bhandar', v: 1, ts: new Date().toISOString(),
+      inventory: inventory, log: logEntries, checks: checks, dishes: dishes, meals: meals,
+      prefs: { displayPrefs: displayPrefs, sort: sortMode, logView: logView } };
+  }
+
+  function downloadText(filename, text, mime) {
+    try {
+      var blob = new Blob([text], { type: mime || 'text/plain' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a'); a.href = url; a.download = filename;
+      document.body.appendChild(a); a.click();
+      setTimeout(function () { document.body.removeChild(a); URL.revokeObjectURL(url); }, 150);
+      return true;
+    } catch (e) { return false; }
+  }
+
+  function applyRestore(b) {
+    if (!b || b.app !== 'bhandar') { toast('That backup doesn\u2019t look valid.'); return false; }
+    inventory = Array.isArray(b.inventory) ? b.inventory : [];
+    logEntries = Array.isArray(b.log) ? b.log : [];
+    checks = Array.isArray(b.checks) ? b.checks : [];
+    dishes = Array.isArray(b.dishes) ? b.dishes : [];
+    meals = (b.meals && typeof b.meals === 'object') ? b.meals : {};
+    if (b.prefs) { if (b.prefs.displayPrefs) displayPrefs = b.prefs.displayPrefs; if (b.prefs.sort) sortMode = b.prefs.sort; if (b.prefs.logView) logView = b.prefs.logView; }
+    save('bk_owner_inventory', inventory); save('bk_owner_log', logEntries); save('bk_owner_checks', checks);
+    save('bk_owner_dishes', dishes); save('bk_owner_meals', meals);
+    save('bk_owner_displayprefs', displayPrefs); save('bk_owner_sort', sortMode); save('bk_owner_logview', logView);
+    migrateLog();
+    renderUnitToggle(); renderInventory(); renderLog(); renderChecks(); renderMealTable();
+    return true;
+  }
+
+  function doRestoreFromText(text) {
+    var b = null, t = (text || '').trim();
+    if (t.indexOf('BHNDR1:') !== -1) { var d = decodePayload(t); if (d && d.t === 'backup') b = d.data; }
+    else { try { b = JSON.parse(t); } catch (e) { b = null; } }
+    if (!b) { toast('Couldn\u2019t read that backup.'); return; }
+    closeModal();
+    openModal('Restore backup?',
+      '<p style="color:var(--ink-soft);font-size:13.5px;margin:0;">This replaces all current owner data with the backup' + (b.ts ? ' from ' + fmtDateTime(b.ts) : '') + '.</p>',
+      [{ label: 'Cancel', kind: 'secondary' }, { label: 'Restore', kind: 'turmeric', action: function () { if (applyRestore(b)) toast('Restored.'); } }]);
+  }
+
+  function openBackup() {
+    openModal('Backup & restore',
+      '<p style="color:var(--ink-soft);font-size:12.5px;margin:0 0 8px;">Save a copy of all your owner data \u2014 keep it safe (message it to yourself) so you can restore onto a new phone.</p>' +
+      '<button class="btn turmeric block" id="bkDownload">Download backup file</button>' +
+      '<button class="btn secondary block" id="bkCopy" style="margin-top:8px;">Copy backup code</button>' +
+      '<hr style="border:none;border-top:1px solid var(--line);margin:16px 0;">' +
+      '<p style="font-size:13px;font-weight:600;margin:0 0 4px;">Restore from a backup</p>' +
+      '<p style="color:var(--out-rust);font-size:12px;margin:0 0 8px;">This replaces all current data.</p>' +
+      '<label style="margin-top:0;font-size:12px;">From a backup file</label><input type="file" id="bkFile" accept=".json,.txt,application/json">' +
+      '<label for="bkCode" style="font-size:12px;">or paste a backup code</label><textarea id="bkCode" rows="4" placeholder="BHNDR code\u2026"></textarea>' +
+      '<button class="btn secondary block" id="bkRestore" style="margin-top:10px;">Restore</button>',
+      [{ label: 'Close', kind: 'secondary' }]);
+    setTimeout(function () {
+      var dl = $('#bkDownload'); if (dl) dl.addEventListener('click', function () {
+        var ok = downloadText('bhandar-backup-' + todayISO() + '.json', JSON.stringify(buildBackup()), 'application/json');
+        toast(ok ? 'Backup file downloaded.' : 'Download blocked here \u2014 use Copy backup code.');
+      });
+      var cp = $('#bkCopy'); if (cp) cp.addEventListener('click', function () {
+        shareCode('Backup code', 'Save this somewhere safe \u2014 paste it into Restore on any phone to bring everything back.', encodePayload({ t: 'backup', data: buildBackup() }));
+      });
+      var rs = $('#bkRestore'); if (rs) rs.addEventListener('click', function () {
+        var file = $('#bkFile').files && $('#bkFile').files[0];
+        var codeText = $('#bkCode').value.trim();
+        if (file) { var reader = new FileReader(); reader.onload = function () { doRestoreFromText(reader.result); }; reader.readAsText(file); }
+        else if (codeText) { doRestoreFromText(codeText); }
+        else { toast('Choose a file or paste a code first.'); }
+      });
+    }, 50);
+  }
+  if ($('#backupBtn')) $('#backupBtn').addEventListener('click', openBackup);
+
+  // ---- Install nudge: keep the owner on one storage box (the home-screen icon) ----
+  function isStandalone() { return (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true; }
+  var deferredInstall = null;
+  window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); deferredInstall = e; });
+  function maybeShowInstallBanner() {
+    var b = $('#installBanner'); if (!b) return;
+    var dismissed = false; try { dismissed = sessionStorage.getItem('bhandar_ib') === '1'; } catch (e) {}
+    b.style.display = (isStandalone() || dismissed) ? 'none' : 'flex';
+  }
+  function installHelp() {
+    openModal('Add to Home Screen',
+      '<p style="color:var(--ink-soft);font-size:13px;margin:0 0 10px;">Do this once, then always open Bhandar from the icon \u2014 it keeps all your data in one place.</p>' +
+      '<p style="font-size:13px;margin:0 0 6px;"><strong>Android (Chrome):</strong> tap the \u22ee menu \u2192 \u201cAdd to Home screen\u201d.</p>' +
+      '<p style="font-size:13px;margin:0 0 6px;"><strong>iPhone (Safari):</strong> tap Share \u2192 \u201cAdd to Home Screen\u201d.</p>' +
+      '<p style="color:var(--ink-soft);font-size:12px;margin:10px 0 0;">If you opened this inside WhatsApp, first tap \u22ee \u2192 \u201cOpen in Chrome/Safari\u201d, then add it.</p>',
+      [{ label: 'Got it', kind: 'turmeric', action: function () { try { sessionStorage.setItem('bhandar_ib', '1'); } catch (e) {} var b = $('#installBanner'); if (b) b.style.display = 'none'; } }]);
+  }
+  if ($('#installBtn')) $('#installBtn').addEventListener('click', function () {
+    if (deferredInstall) { deferredInstall.prompt(); if (deferredInstall.userChoice) deferredInstall.userChoice.then(function () { deferredInstall = null; maybeShowInstallBanner(); }); }
+    else { installHelp(); }
+  });
+  if ($('#installDismiss')) $('#installDismiss').addEventListener('click', function () { try { sessionStorage.setItem('bhandar_ib', '1'); } catch (e) {} $('#installBanner').style.display = 'none'; });
+
+  function hideSwitch() { var s = $('#switchRoleBtn'); if (s) s.style.display = 'none'; }
+
+  function boot() {
+    if (FORCE_ROLE === 'owner') {
+      role = 'owner'; localStorage.setItem('bhandar_role', 'owner');
+      hideSwitch(); enterApp();
+    } else if (FORCE_ROLE === 'cook') {
+      role = 'cook'; localStorage.setItem('bhandar_role', 'cook');
+      hideSwitch();
+      if (cookName) { enterApp(); }
+      else {
+        $('#onboard').style.display = 'flex';
+        $('#roleStep').style.display = 'none';
+        $('#nameStep').classList.add('active');
+        var back = $('#cookNameBack'); if (back) back.style.display = 'none';
+      }
+    } else {
+      showOnboardIfNeeded();
+    }
+  }
+
+  boot();
+})();
+</script>
+</body>
+</html>
